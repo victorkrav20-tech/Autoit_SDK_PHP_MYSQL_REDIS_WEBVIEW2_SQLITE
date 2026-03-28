@@ -489,12 +489,10 @@ logs/
 MCP серверы для интеграции с Kiro IDE (AI инструменты).
 
 **Содержимое:**
-- `sdk_codemapper/` - навигация по AutoIt коду (18 функций)
-- `sdk_assistant/` - AI помощник для разработки
+
 - `README.md` - документация MCP серверов
 
 📖 **Документация:** [mcp_servers/README.md](mcp_servers/README.md)  
-📖 **SDK CodeMapper:** [mcp_servers/sdk_codemapper/README.md](mcp_servers/sdk_codemapper/README.md)
 
 ---
 
@@ -587,7 +585,6 @@ Apps (используют любые библиотеки)
 - **План развития:** [ROADMAP.md](ROADMAP.md)
 - **Завершённые задачи:** [FINISH_SDK.md](FINISH_SDK.md)
 - **MCP серверы:** [mcp_servers/README.md](mcp_servers/README.md)
-- **SDK CodeMapper:** [mcp_servers/sdk_codemapper/README.md](mcp_servers/sdk_codemapper/README.md)
 - **SDK инициализация:** [libs/SDK_Init.au3](libs/SDK_Init.au3)
 - **Utils (утилиты + логирование):** [libs/Utils/README.md](libs/Utils/README.md)
 - **MySQL библиотека:** [libs/MySQL_PHP/README.md](libs/MySQL_PHP/README.md)
