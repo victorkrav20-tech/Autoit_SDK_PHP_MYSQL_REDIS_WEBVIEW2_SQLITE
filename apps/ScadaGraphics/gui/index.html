@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewScada1 - SCADA System</title>
+    
+    <!-- Tabler CSS (Local) -->
+    <link href="../../_tabler_engine/css/tabler.min.css" rel="stylesheet">
+    
+    <!-- Tabler Themes (Official) -->
+    <link href="../../_tabler_engine/css/tabler-themes.min.css" rel="stylesheet">
+    
+    <!-- uPlot CSS -->
+    <link href="../../_tabler_engine/libs/uplot/uPlot.min.css" rel="stylesheet">
+    
+    <!-- SCADA Widgets CSS (Isolated) -->
+    <link href="css/scada-widgets.css" rel="stylesheet">
+    
+    <!-- Custom CSS (Minimal) -->
+    <link href="css/styles_all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <!-- Header Component -->
+        <app-header></app-header>
+        
+        <div class="page-wrapper">
+            <!-- Page 1: Мониторинг -->
+            <div id="page1" class="page-content">
+                <page-monitoring></page-monitoring>
+            </div>
+            
+            <!-- Page 2: Аналитика -->
+            <div id="page2" class="page-content">
+                <page-analytics></page-analytics>
+            </div>
+            
+            <!-- Page 3: Настройки -->
+            <div id="page3" class="page-content">
+                <page-settings></page-settings>
+            </div>
+            
+            <!-- Page 4: Отчёты (Графики) -->
+            <div id="page4" class="page-content">
+                <page-reports></page-reports>
+            </div>
+            
+            <!-- Page 5: Галерея карточек -->
+            <div id="page5" class="page-content">
+                <page-gallery></page-gallery>
+            </div>
+            
+            <!-- Footer Component -->
+            <app-footer></app-footer>
+        </div>
+    </div>
+
+    <!-- Tabler JS (Local) -->
+    <script src="../../_tabler_engine/js/tabler.min.js"></script>
+    
+    <!-- Tabler Theme (Official) -->
+    <script src="../../_tabler_engine/js/tabler-theme.min.js"></script>
+    
+    <!-- uPlot JS -->
+    <script src="../../_tabler_engine/libs/uplot/uPlot.min.js"></script>
+    
+    <!-- uDSV JS (CSV Parser) -->
+    <script src="../../_tabler_engine/libs/uplot/uDSV.iife.min.js"></script>
+    
+    <!-- SCADA Widgets -->
+    <script src="js/scada-widgets/scada-data-parser.js"></script>
+    <script src="js/scada-widgets/scada-chart-base.js"></script>
+    <script src="js/scada-widgets/scada-realtime-chart.js"></script>
+    
+    <!-- Engine (Router) -->
+    <script src="engine.js"></script>
+    
+    <!-- Components -->
+    <script src="js/header-component.js"></script>
+    <script src="js/footer-component.js"></script>
+    <script src="pages/page1-component.js"></script>
+    <script src="pages/page2-component.js"></script>
+    <script src="pages/page3-component.js"></script>
+    <script src="pages/page4-component.js"></script>
+    
+    <!-- Инициализация навигации -->
+    <script>
+        // Загружаем последнюю страницу сразу (синхронно)
+        (function() {
+            const lastPage = localStorage.getItem('current-page') || 'page1';
+            const pageElement = document.getElementById(lastPage);
+            
+            if (pageElement) {
+                // Добавляем active к нужной странице
+                pageElement.classList.add('active');
+                console.log('✅ Загружена страница:', lastPage);
+            } else {
+                // Если страница не найдена - загружаем page1
+                const defaultPage = document.getElementById('page1');
+                if (defaultPage) {
+                    defaultPage.classList.add('active');
+                }
+            }
+        })();
+        
+        // Обновляем навигацию после загрузки DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            const lastPage = localStorage.getItem('current-page') || 'page1';
+            const header = document.querySelector('app-header');
+            
+            if (header) {
+                // Небольшая задержка для загрузки компонента
+                setTimeout(() => {
+                    const links = header.querySelectorAll('.nav-link');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.dataset.page === lastPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Bridge Performance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            /* Отключаем сглаживание для производительности */
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #34495e;
+            padding: 30px;
+            border-radius: 8px;
+            /* Убрали backdrop-filter - он очень тяжёлый */
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .test-section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #2c3e50;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .test-section h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ecf0f1;
+        }
+        
+        button {
+            padding: 12px 24px;
+            font-size: 15px;
+            margin: 8px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            /* Убрали все анимации и will-change */
+        }
+        
+        /* Только изменение прозрачности - самая лёгкая операция */
+        button:hover {
+            opacity: 0.85;
+        }
+        
+        button:active {
+            opacity: 0.7;
+        }
+        
+        /* Цвета кнопок - простые, без градиентов */
+        .simple { background: #27ae60; }
+        .control { background: #3498db; }
+        .info { background: #1abc9c; }
+        .alarm { background: #e74c3c; }
+        .data { background: #f39c12; }
+        .cmd { background: #9b59b6; }
+        .log { background: #16a085; }
+        .err { background: #c0392b; }
+        .dbg { background: #7f8c8d; }
+        
+        #log {
+            margin-top: 20px;
+            padding: 15px;
+            background: #1a252f;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 13px;
+            /* Оптимизация скролла */
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .log-entry {
+            padding: 4px 0;
+            margin: 2px 0;
+            border-left: 2px solid #27ae60;
+            padding-left: 8px;
+            /* Отключаем анимации в логах */
+            animation: none;
+        }
+        
+        /* Убираем все transition для максимальной производительности */
+        * {
+            transition: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Test Bridge Performance</h1>
+        
+        <div class="test-section">
+            <h2>� Вариант 1: Простой callback</h2>
+            <button class="simple" onclick="sendSimple()">Отправить простое сообщение</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>🔹 Вариант 2: JSON типизация</h2>
+            <button class="control" onclick="sendJSON('CONTROL', 'button_click', {id:'btn1'})">CONTROL</button>
+            <button class="info" onclick="sendJSON('INFO', 'status_update', {status:'ok'})">INFO</button>
+            <button class="alarm" onclick="sendJSON('ALARM', 'high_temp', {temp:85})">ALARM</button>
+            <button class="data" onclick="sendJSON('DATA', 'sensor_reading', {value:123.45})">DATA</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>🔹 Вариант 3: Префиксы</h2>
+            <button class="cmd" onclick="sendPrefix('CMD:', 'start_motor:1')">CMD</button>
+            <button class="log" onclick="sendPrefix('LOG:', 'system_started')">LOG</button>
+            <button class="err" onclick="sendPrefix('ERR:', 'connection_lost')">ERR</button>
+            <button class="dbg" onclick="sendPrefix('DBG:', 'variable_x=42')">DBG</button>
+        </div>
+        
+        <div id="log"></div>
+    </div>
+    
+    <script>
+        // Оптимизация: кеш элемента лога
+        const logElement = document.getElementById("log");
+        
+        // Функция отправки простого сообщения
+        function sendSimple() {
+            window.chrome.webview.postMessage("Привет из JavaScript!");
+            log("📤 Отправлено: Привет из JavaScript!");
+        }
+        
+        // Функция отправки JSON сообщения
+        function sendJSON(type, action, data) {
+            const msg = JSON.stringify({type: type, action: action, data: data});
+            window.chrome.webview.postMessage(msg);
+            log("📤 JSON: " + type + " / " + action);
+        }
+        
+        // Функция отправки префиксного сообщения
+        function sendPrefix(prefix, data) {
+            const msg = prefix + data;
+            window.chrome.webview.postMessage(msg);
+            log("📤 Префикс: " + msg);
+        }
+        
+        // Слушатель ответов от AutoIt
+        window.chrome.webview.addEventListener("message", function(e) {
+            log("📥 Ответ: " + e.data);
+        });
+        
+        // Оптимизированная функция логирования
+        function log(msg) {
+            // Используем DocumentFragment для батчинга DOM операций
+            const entry = document.createElement("div");
+            entry.className = "log-entry";
+            
+            // Упрощённое время без миллисекунд для производительности
+            const now = new Date();
+            const time = now.getHours().toString().padStart(2, '0') + ':' + 
+                        now.getMinutes().toString().padStart(2, '0') + ':' + 
+                        now.getSeconds().toString().padStart(2, '0');
+            
+            entry.textContent = "[" + time + "] " + msg;
+            
+            // Добавляем в DOM
+            logElement.appendChild(entry);
+            
+            // Ограничиваем количество записей для производительности
+            const maxEntries = 50;
+            while (logElement.children.length > maxEntries) {
+                logElement.removeChild(logElement.firstChild);
+            }
+            
+            // Оптимизированный скролл
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+        
+        // Приветствие при загрузке
+        window.addEventListener('load', function() {
+            log("✅ Страница загружена. Готов к тестированию!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 11 - Full Bridge</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .test-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .test-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .status {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌉 Test 11 - Full Bridge</h1>
+        
+        <div class="test-section">
+            <h2>📝 Console Tests</h2>
+            <button onclick="testConsoleLog()">console.log</button>
+            <button onclick="testConsoleWarn()">console.warn</button>
+            <button onclick="testConsoleError()">console.error</button>
+            <button onclick="testConsoleInfo()">console.info</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>❌ Error Tests</h2>
+            <button onclick="testJSError()">Trigger JS Error</button>
+            <button onclick="testUndefinedError()">Undefined Variable</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>📨 Message Tests</h2>
+            <button onclick="testSimpleMessage()">Simple Message</button>
+            <button onclick="testJSONMessage()">JSON Message</button>
+            <button onclick="testDataMessage()">Data Message</button>
+        </div>
+        
+        <div class="status">
+            <div>Status: <span id="status">Ready</span></div>
+            <div>Engine: <span id="engine-status">Initializing...</span></div>
+        </div>
+    </div>
+    
+    <script src="engine.js"></script>
+    <script src="test11.js"></script>
+</body>
+</html>

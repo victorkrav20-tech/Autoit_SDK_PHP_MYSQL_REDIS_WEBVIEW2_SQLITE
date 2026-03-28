@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Test</title>
+    <style>
+        body { 
+            font-family: Arial; 
+            padding: 20px; 
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .counter { 
+            font-size: 48px; 
+            font-weight: bold; 
+            text-align: center;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            margin: 20px auto;
+            animation: spin 2s linear infinite;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .stat {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Dynamic Performance Test</h1>
+    <div class="counter" id="counter">0</div>
+    <div class="box"></div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div>Timer 1</div>
+            <div id="timer1">0</div>
+        </div>
+        <div class="stat">
+            <div>Timer 2</div>
+            <div id="timer2">0</div>
+        </div>
+        <div class="stat">
+            <div>Timer 3</div>
+            <div id="timer3">0</div>
+        </div>
+    </div>
+    
+    <script>
+        // Счётчик обновляется каждые 10 мс
+        let count = 0;
+        setInterval(() => {
+            count++;
+            document.getElementById('counter').textContent = count;
+        }, 10);
+        
+        // Три таймера с разной частотой
+        let t1 = 0, t2 = 0, t3 = 0;
+        setInterval(() => {
+            t1++;
+            document.getElementById('timer1').textContent = t1;
+        }, 50);
+        
+        setInterval(() => {
+            t2++;
+            document.getElementById('timer2').textContent = t2;
+        }, 100);
+        
+        setInterval(() => {
+            t3++;
+            document.getElementById('timer3').textContent = t3;
+        }, 200);
+        
+        console.log('Dynamic test loaded - timers running');
+    </script>
+</body>
+</html>

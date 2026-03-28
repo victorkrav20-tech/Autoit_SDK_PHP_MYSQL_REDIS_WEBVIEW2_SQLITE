@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCADA Navigation Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e1e; 
+            color: #fff; 
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            height: 100vh; 
+        }
+        
+        /* Навигация */
+        .nav-bar { 
+            display: flex; 
+            background: #2d2d2d; 
+            padding: 10px; 
+            border-bottom: 2px solid #0078d4; 
+            gap: 5px;
+        }
+        
+        .nav-btn { 
+            padding: 12px 24px; 
+            cursor: pointer; 
+            background: #3d3d3d;
+            border: none;
+            color: #fff;
+            border-radius: 4px; 
+            transition: all 0.15s;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .nav-btn:hover { 
+            background: #4d4d4d; 
+        }
+        
+        .nav-btn.active { 
+            background: #0078d4; 
+            font-weight: bold; 
+        }
+
+        /* Контент */
+        .content-area { 
+            flex: 1; 
+            position: relative; 
+            overflow: hidden;
+        }
+        
+        .page-content { 
+            display: none; 
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .page-content.active { 
+            display: block; 
+        }
+
+        /* Стили для контента */
+        h1 { 
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #0078d4;
+        }
+        
+        .info-section {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #3d3d3d;
+        }
+        
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .data-item {
+            background: #333;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .data-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #0078d4;
+            margin-bottom: 5px;
+        }
+        
+        .data-label {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        /* Статус */
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2d2d2d;
+            padding: 8px 20px;
+            border-top: 1px solid #3d3d3d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85em;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #28a745;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Навигация -->
+        <div class="nav-bar">
+            <button class="nav-btn active" onclick="navigateTo('page1')" id="btn-page1">
+                📊 Страница 1
+            </button>
+            <button class="nav-btn" onclick="navigateTo('page2')" id="btn-page2">
+                📈 Страница 2
+            </button>
+            <button class="nav-btn" onclick="navigateTo('page3')" id="btn-page3">
+                ⚙️ Страница 3
+            </button>
+        </div>
+
+        <!-- Контент -->
+        <div class="content-area">
+            <!-- Страница 1 -->
+            <div id="page1" class="page-content active">
+                <h1>📊 Страница 1 - Мониторинг</h1>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Данные в реальном времени</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="value1">125.4</div>
+                            <div class="data-label">Температура °C</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="value2">68.2</div>
+                            <div class="data-label">Давление bar</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="value3">1450</div>
+                            <div class="data-label">Обороты RPM</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="value4">89%</div>
+                            <div class="data-label">Загрузка</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Системные показатели</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="sys1">OK</div>
+                            <div class="data-label">Статус системы</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="sys2">00:45:23</div>
+                            <div class="data-label">Время работы</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="sys3">0</div>
+                            <div class="data-label">Ошибок</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="sys4">3</div>
+                            <div class="data-label">Активных задач</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница 2 -->
+            <div id="page2" class="page-content">
+                <h1>📈 Страница 2 - Аналитика</h1>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Статистика за период</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="stat1">1,245</div>
+                            <div class="data-label">Всего операций</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="stat2">98.5%</div>
+                            <div class="data-label">Успешность</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="stat3">18</div>
+                            <div class="data-label">Предупреждений</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="stat4">2.3s</div>
+                            <div class="data-label">Среднее время</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Производительность</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="perf1">456 MB</div>
+                            <div class="data-label">Использовано памяти</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="perf2">12%</div>
+                            <div class="data-label">CPU</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="perf3">850 MB/s</div>
+                            <div class="data-label">Сеть</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="perf4">45°C</div>
+                            <div class="data-label">Температура CPU</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница 3 -->
+            <div id="page3" class="page-content">
+                <h1>⚙️ Страница 3 - Настройки</h1>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Конфигурация системы</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="cfg1">AUTO</div>
+                            <div class="data-label">Режим работы</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="cfg2">500ms</div>
+                            <div class="data-label">Интервал обновления</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="cfg3">ON</div>
+                            <div class="data-label">Автосохранение</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="cfg4">DEBUG</div>
+                            <div class="data-label">Уровень логов</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h2 style="margin-bottom: 15px; font-size: 1.3em;">Параметры подключения</h2>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <div class="data-value" id="conn1">192.168.1.100</div>
+                            <div class="data-label">IP адрес</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="conn2">8080</div>
+                            <div class="data-label">Порт</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="conn3">5s</div>
+                            <div class="data-label">Таймаут</div>
+                        </div>
+                        <div class="data-item">
+                            <div class="data-value" id="conn4">3</div>
+                            <div class="data-label">Повторы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Статус бар -->
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="status-dot"></span>
+                <span>Система активна</span>
+            </div>
+            <div class="status-item">
+                <span>Текущая страница: <strong id="currentPage">Страница 1</strong></span>
+            </div>
+            <div class="status-item">
+                <span>Навигаций: <strong id="navCount">0</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let navigationCount = 0;
+        
+        // Функция навигации
+        function navigateTo(pageId) {
+            // Скрываем все страницы
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Убираем активность со всех кнопок
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Показываем выбранную страницу
+            document.getElementById(pageId).classList.add('active');
+            document.getElementById('btn-' + pageId).classList.add('active');
+            
+            // Обновляем статус
+            const pageNames = {
+                'page1': 'Страница 1',
+                'page2': 'Страница 2',
+                'page3': 'Страница 3'
+            };
+            document.getElementById('currentPage').textContent = pageNames[pageId];
+            
+            // Увеличиваем счетчик навигаций
+            navigationCount++;
+            document.getElementById('navCount').textContent = navigationCount;
+            
+            // Отправляем событие в AutoIt
+            if (window.chrome && window.chrome.webview) {
+                window.chrome.webview.postMessage('NAV_INTERNAL_COMPLETED|' + pageId);
+            }
+        }
+        
+        // API для AutoIt - навигация по номеру страницы
+        function navigateToPage(pageNumber) {
+            const pageId = 'page' + pageNumber;
+            if (document.getElementById(pageId)) {
+                navigateTo(pageId);
+                return true;
+            }
+            return false;
+        }
+        
+        // API для AutoIt - обновление значений
+        function updateValue(elementId, value) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = value;
+                return true;
+            }
+            return false;
+        }
+        
+        // Инициализация
+        console.log('SCADA Navigation System Ready');
+    </script>
+</body>
+</html>

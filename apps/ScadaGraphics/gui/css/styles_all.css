@@ -1,0 +1,23 @@
+/* ===============================================================================
+   styles_all.css - Главный файл стилей NewScada1
+   Импортирует все модули в правильном порядке
+   =============================================================================== */
+
+/* === CORE (Ядро) === */
+@import 'core/variables.css';
+@import 'core/base.css';
+@import 'core/utilities.css';
+
+/* === COMPONENTS (Компоненты) === */
+@import 'components/header.css';
+@import 'components/footer.css';
+@import 'components/cards.css';
+@import 'components/progress.css';
+@import 'components/badges.css';
+@import 'components/navigation.css';
+
+/* === PAGES (Страницы - опционально) === */
+@import 'pages/monitoring.css';
+@import 'pages/analytics.css';
+@import 'pages/settings.css';
+@import 'pages/gallery.css';

@@ -1,0 +1,472 @@
+/* ===============================================================================
+   utilities.css - Утилитарные классы для быстрой стилизации
+   ПОЛНАЯ БАЗА - Маленькие переиспользуемые классы
+   =============================================================================== */
+
+/* ========================================
+   ТИПОГРАФИКА - ЖИРНОСТЬ
+   ======================================== */
+
+.text-light { font-weight: var(--font-weight-light) !important; }
+.text-normal { font-weight: var(--font-weight-normal) !important; }
+.text-medium { font-weight: var(--font-weight-medium) !important; }
+.text-semibold { font-weight: var(--font-weight-semibold) !important; }
+.text-bold { font-weight: var(--font-weight-bold) !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - РАЗМЕРЫ
+   ======================================== */
+
+.text-xs { font-size: var(--font-size-xs) !important; }
+.text-sm { font-size: var(--font-size-sm) !important; }
+.text-base { font-size: var(--font-size-base) !important; }
+.text-lg { font-size: var(--font-size-lg) !important; }
+.text-xl { font-size: var(--font-size-xl) !important; }
+.text-2xl { font-size: var(--font-size-2xl) !important; }
+.text-3xl { font-size: var(--font-size-3xl) !important; }
+.text-4xl { font-size: var(--font-size-4xl) !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - ВЫРАВНИВАНИЕ
+   ======================================== */
+
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.text-justify { text-align: justify !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - ВЫСОТА СТРОКИ
+   ======================================== */
+
+.leading-tight { line-height: var(--line-height-tight) !important; }
+.leading-normal { line-height: var(--line-height-normal) !important; }
+.leading-relaxed { line-height: var(--line-height-relaxed) !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - ТРАНСФОРМАЦИЯ
+   ======================================== */
+
+.text-uppercase { text-transform: uppercase !important; }
+.text-lowercase { text-transform: lowercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+.text-normal-case { text-transform: none !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - ДЕКОРАЦИЯ
+   ======================================== */
+
+.text-underline { text-decoration: underline !important; }
+.text-line-through { text-decoration: line-through !important; }
+.text-no-underline { text-decoration: none !important; }
+
+/* ========================================
+   ТИПОГРАФИКА - ПЕРЕНОС
+   ======================================== */
+
+.text-truncate { 
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.text-wrap { white-space: normal !important; }
+.text-nowrap { white-space: nowrap !important; }
+.text-break { word-break: break-word !important; }
+
+/* ========================================
+   СТАТУСЫ (для SCADA)
+   ======================================== */
+
+.status-ok { color: var(--color-status-ok) !important; }
+.status-warning { color: var(--color-status-warning) !important; }
+.status-error { color: var(--color-status-error) !important; }
+.status-info { color: var(--color-status-info) !important; }
+
+/* ========================================
+   ДАННЫЕ (для отображения значений датчиков)
+   ======================================== */
+
+.data-value { font-weight: var(--font-weight-semibold) !important; }
+.data-label { font-weight: var(--font-weight-normal) !important; }
+.data-unit { font-weight: var(--font-weight-medium) !important; }
+
+/* ========================================
+   ВИДИМОСТЬ
+   ======================================== */
+
+.hidden { display: none !important; }
+.visible { display: block !important; }
+.invisible { visibility: hidden !important; }
+
+/* ========================================
+   DISPLAY
+   ======================================== */
+
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-inline { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.d-flex { display: flex !important; }
+.d-inline-flex { display: inline-flex !important; }
+.d-grid { display: grid !important; }
+
+/* ========================================
+   FLEXBOX - НАПРАВЛЕНИЕ
+   ======================================== */
+
+.flex { display: flex !important; }
+.flex-row { flex-direction: row !important; }
+.flex-row-reverse { flex-direction: row-reverse !important; }
+.flex-column { flex-direction: column !important; }
+.flex-column-reverse { flex-direction: column-reverse !important; }
+
+/* ========================================
+   FLEXBOX - ПЕРЕНОС
+   ======================================== */
+
+.flex-wrap { flex-wrap: wrap !important; }
+.flex-nowrap { flex-wrap: nowrap !important; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse !important; }
+
+/* ========================================
+   FLEXBOX - ВЫРАВНИВАНИЕ
+   ======================================== */
+
+.justify-start { justify-content: flex-start !important; }
+.justify-end { justify-content: flex-end !important; }
+.justify-center { justify-content: center !important; }
+.justify-between { justify-content: space-between !important; }
+.justify-around { justify-content: space-around !important; }
+.justify-evenly { justify-content: space-evenly !important; }
+
+.items-start { align-items: flex-start !important; }
+.items-end { align-items: flex-end !important; }
+.items-center { align-items: center !important; }
+.items-baseline { align-items: baseline !important; }
+.items-stretch { align-items: stretch !important; }
+
+/* ========================================
+   FLEXBOX - КОМБИНАЦИИ
+   ======================================== */
+
+.flex-center { 
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.flex-between { 
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.flex-around { 
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+/* ========================================
+   FLEXBOX - РОСТ И СЖАТИЕ
+   ======================================== */
+
+.flex-1 { flex: 1 1 0% !important; }
+.flex-auto { flex: 1 1 auto !important; }
+.flex-initial { flex: 0 1 auto !important; }
+.flex-none { flex: none !important; }
+
+.flex-grow { flex-grow: 1 !important; }
+.flex-grow-0 { flex-grow: 0 !important; }
+
+.flex-shrink { flex-shrink: 1 !important; }
+.flex-shrink-0 { flex-shrink: 0 !important; }
+
+/* ========================================
+   ОТСТУПЫ - MARGIN
+   ======================================== */
+
+.m-0 { margin: var(--spacing-0) !important; }
+.m-xs { margin: var(--spacing-xs) !important; }
+.m-sm { margin: var(--spacing-sm) !important; }
+.m-md { margin: var(--spacing-md) !important; }
+.m-lg { margin: var(--spacing-lg) !important; }
+.m-xl { margin: var(--spacing-xl) !important; }
+.m-auto { margin: auto !important; }
+
+.mt-0 { margin-top: var(--spacing-0) !important; }
+.mt-xs { margin-top: var(--spacing-xs) !important; }
+.mt-sm { margin-top: var(--spacing-sm) !important; }
+.mt-md { margin-top: var(--spacing-md) !important; }
+.mt-lg { margin-top: var(--spacing-lg) !important; }
+.mt-xl { margin-top: var(--spacing-xl) !important; }
+
+.mb-0 { margin-bottom: var(--spacing-0) !important; }
+.mb-xs { margin-bottom: var(--spacing-xs) !important; }
+.mb-sm { margin-bottom: var(--spacing-sm) !important; }
+.mb-md { margin-bottom: var(--spacing-md) !important; }
+.mb-lg { margin-bottom: var(--spacing-lg) !important; }
+.mb-xl { margin-bottom: var(--spacing-xl) !important; }
+
+.ml-0 { margin-left: var(--spacing-0) !important; }
+.ml-xs { margin-left: var(--spacing-xs) !important; }
+.ml-sm { margin-left: var(--spacing-sm) !important; }
+.ml-md { margin-left: var(--spacing-md) !important; }
+.ml-lg { margin-left: var(--spacing-lg) !important; }
+.ml-xl { margin-left: var(--spacing-xl) !important; }
+.ml-auto { margin-left: auto !important; }
+
+.mr-0 { margin-right: var(--spacing-0) !important; }
+.mr-xs { margin-right: var(--spacing-xs) !important; }
+.mr-sm { margin-right: var(--spacing-sm) !important; }
+.mr-md { margin-right: var(--spacing-md) !important; }
+.mr-lg { margin-right: var(--spacing-lg) !important; }
+.mr-xl { margin-right: var(--spacing-xl) !important; }
+.mr-auto { margin-right: auto !important; }
+
+.mx-0 { margin-left: var(--spacing-0) !important; margin-right: var(--spacing-0) !important; }
+.mx-xs { margin-left: var(--spacing-xs) !important; margin-right: var(--spacing-xs) !important; }
+.mx-sm { margin-left: var(--spacing-sm) !important; margin-right: var(--spacing-sm) !important; }
+.mx-md { margin-left: var(--spacing-md) !important; margin-right: var(--spacing-md) !important; }
+.mx-lg { margin-left: var(--spacing-lg) !important; margin-right: var(--spacing-lg) !important; }
+.mx-xl { margin-left: var(--spacing-xl) !important; margin-right: var(--spacing-xl) !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+.my-0 { margin-top: var(--spacing-0) !important; margin-bottom: var(--spacing-0) !important; }
+.my-xs { margin-top: var(--spacing-xs) !important; margin-bottom: var(--spacing-xs) !important; }
+.my-sm { margin-top: var(--spacing-sm) !important; margin-bottom: var(--spacing-sm) !important; }
+.my-md { margin-top: var(--spacing-md) !important; margin-bottom: var(--spacing-md) !important; }
+.my-lg { margin-top: var(--spacing-lg) !important; margin-bottom: var(--spacing-lg) !important; }
+.my-xl { margin-top: var(--spacing-xl) !important; margin-bottom: var(--spacing-xl) !important; }
+
+/* ========================================
+   ОТСТУПЫ - PADDING
+   ======================================== */
+
+.p-0 { padding: var(--spacing-0) !important; }
+.p-xs { padding: var(--spacing-xs) !important; }
+.p-sm { padding: var(--spacing-sm) !important; }
+.p-md { padding: var(--spacing-md) !important; }
+.p-lg { padding: var(--spacing-lg) !important; }
+.p-xl { padding: var(--spacing-xl) !important; }
+
+.pt-0 { padding-top: var(--spacing-0) !important; }
+.pt-xs { padding-top: var(--spacing-xs) !important; }
+.pt-sm { padding-top: var(--spacing-sm) !important; }
+.pt-md { padding-top: var(--spacing-md) !important; }
+.pt-lg { padding-top: var(--spacing-lg) !important; }
+.pt-xl { padding-top: var(--spacing-xl) !important; }
+
+.pb-0 { padding-bottom: var(--spacing-0) !important; }
+.pb-xs { padding-bottom: var(--spacing-xs) !important; }
+.pb-sm { padding-bottom: var(--spacing-sm) !important; }
+.pb-md { padding-bottom: var(--spacing-md) !important; }
+.pb-lg { padding-bottom: var(--spacing-lg) !important; }
+.pb-xl { padding-bottom: var(--spacing-xl) !important; }
+
+.pl-0 { padding-left: var(--spacing-0) !important; }
+.pl-xs { padding-left: var(--spacing-xs) !important; }
+.pl-sm { padding-left: var(--spacing-sm) !important; }
+.pl-md { padding-left: var(--spacing-md) !important; }
+.pl-lg { padding-left: var(--spacing-lg) !important; }
+.pl-xl { padding-left: var(--spacing-xl) !important; }
+
+.pr-0 { padding-right: var(--spacing-0) !important; }
+.pr-xs { padding-right: var(--spacing-xs) !important; }
+.pr-sm { padding-right: var(--spacing-sm) !important; }
+.pr-md { padding-right: var(--spacing-md) !important; }
+.pr-lg { padding-right: var(--spacing-lg) !important; }
+.pr-xl { padding-right: var(--spacing-xl) !important; }
+
+.px-0 { padding-left: var(--spacing-0) !important; padding-right: var(--spacing-0) !important; }
+.px-xs { padding-left: var(--spacing-xs) !important; padding-right: var(--spacing-xs) !important; }
+.px-sm { padding-left: var(--spacing-sm) !important; padding-right: var(--spacing-sm) !important; }
+.px-md { padding-left: var(--spacing-md) !important; padding-right: var(--spacing-md) !important; }
+.px-lg { padding-left: var(--spacing-lg) !important; padding-right: var(--spacing-lg) !important; }
+.px-xl { padding-left: var(--spacing-xl) !important; padding-right: var(--spacing-xl) !important; }
+
+.py-0 { padding-top: var(--spacing-0) !important; padding-bottom: var(--spacing-0) !important; }
+.py-xs { padding-top: var(--spacing-xs) !important; padding-bottom: var(--spacing-xs) !important; }
+.py-sm { padding-top: var(--spacing-sm) !important; padding-bottom: var(--spacing-sm) !important; }
+.py-md { padding-top: var(--spacing-md) !important; padding-bottom: var(--spacing-md) !important; }
+.py-lg { padding-top: var(--spacing-lg) !important; padding-bottom: var(--spacing-lg) !important; }
+.py-xl { padding-top: var(--spacing-xl) !important; padding-bottom: var(--spacing-xl) !important; }
+
+/* ========================================
+   ТЕНИ (SHADOWS)
+   ======================================== */
+
+.shadow-xs { box-shadow: var(--shadow-xs) !important; }
+.shadow-sm { box-shadow: var(--shadow-sm) !important; }
+.shadow-md { box-shadow: var(--shadow-md) !important; }
+.shadow-lg { box-shadow: var(--shadow-lg) !important; }
+.shadow-xl { box-shadow: var(--shadow-xl) !important; }
+.shadow-2xl { box-shadow: var(--shadow-2xl) !important; }
+.shadow-inner { box-shadow: var(--shadow-inner) !important; }
+.shadow-none { box-shadow: var(--shadow-none) !important; }
+
+/* ========================================
+   СКРУГЛЕНИЯ (BORDER RADIUS)
+   ======================================== */
+
+.rounded-none { border-radius: var(--radius-none) !important; }
+.rounded-sm { border-radius: var(--radius-sm) !important; }
+.rounded-md { border-radius: var(--radius-md) !important; }
+.rounded-lg { border-radius: var(--radius-lg) !important; }
+.rounded-xl { border-radius: var(--radius-xl) !important; }
+.rounded-2xl { border-radius: var(--radius-2xl) !important; }
+.rounded-3xl { border-radius: var(--radius-3xl) !important; }
+.rounded-full { border-radius: var(--radius-full) !important; }
+
+/* Скругление отдельных углов */
+.rounded-t-none { border-top-left-radius: var(--radius-none) !important; border-top-right-radius: var(--radius-none) !important; }
+.rounded-t-sm { border-top-left-radius: var(--radius-sm) !important; border-top-right-radius: var(--radius-sm) !important; }
+.rounded-t-md { border-top-left-radius: var(--radius-md) !important; border-top-right-radius: var(--radius-md) !important; }
+.rounded-t-lg { border-top-left-radius: var(--radius-lg) !important; border-top-right-radius: var(--radius-lg) !important; }
+
+.rounded-b-none { border-bottom-left-radius: var(--radius-none) !important; border-bottom-right-radius: var(--radius-none) !important; }
+.rounded-b-sm { border-bottom-left-radius: var(--radius-sm) !important; border-bottom-right-radius: var(--radius-sm) !important; }
+.rounded-b-md { border-bottom-left-radius: var(--radius-md) !important; border-bottom-right-radius: var(--radius-md) !important; }
+.rounded-b-lg { border-bottom-left-radius: var(--radius-lg) !important; border-bottom-right-radius: var(--radius-lg) !important; }
+
+/* ========================================
+   ГРАНИЦЫ (BORDERS)
+   ======================================== */
+
+.border-0 { border-width: var(--border-width-0) !important; }
+.border-1 { border-width: var(--border-width-1) !important; }
+.border-2 { border-width: var(--border-width-2) !important; }
+.border-4 { border-width: var(--border-width-4) !important; }
+
+.border-t-0 { border-top-width: var(--border-width-0) !important; }
+.border-t-1 { border-top-width: var(--border-width-1) !important; }
+.border-t-2 { border-top-width: var(--border-width-2) !important; }
+
+.border-b-0 { border-bottom-width: var(--border-width-0) !important; }
+.border-b-1 { border-bottom-width: var(--border-width-1) !important; }
+.border-b-2 { border-bottom-width: var(--border-width-2) !important; }
+
+/* ========================================
+   ПРОЗРАЧНОСТЬ (OPACITY)
+   ======================================== */
+
+.opacity-0 { opacity: var(--opacity-0) !important; }
+.opacity-10 { opacity: var(--opacity-10) !important; }
+.opacity-20 { opacity: var(--opacity-20) !important; }
+.opacity-25 { opacity: var(--opacity-25) !important; }
+.opacity-30 { opacity: var(--opacity-30) !important; }
+.opacity-40 { opacity: var(--opacity-40) !important; }
+.opacity-50 { opacity: var(--opacity-50) !important; }
+.opacity-60 { opacity: var(--opacity-60) !important; }
+.opacity-70 { opacity: var(--opacity-70) !important; }
+.opacity-75 { opacity: var(--opacity-75) !important; }
+.opacity-80 { opacity: var(--opacity-80) !important; }
+.opacity-85 { opacity: var(--opacity-85) !important; }
+.opacity-90 { opacity: var(--opacity-90) !important; }
+.opacity-95 { opacity: var(--opacity-95) !important; }
+.opacity-100 { opacity: var(--opacity-100) !important; }
+
+/* ========================================
+   КУРСОР (CURSOR)
+   ======================================== */
+
+.cursor-auto { cursor: auto !important; }
+.cursor-default { cursor: default !important; }
+.cursor-pointer { cursor: pointer !important; }
+.cursor-wait { cursor: wait !important; }
+.cursor-text { cursor: text !important; }
+.cursor-move { cursor: move !important; }
+.cursor-not-allowed { cursor: not-allowed !important; }
+.cursor-help { cursor: help !important; }
+
+/* ========================================
+   OVERFLOW
+   ======================================== */
+
+.overflow-auto { overflow: auto !important; }
+.overflow-hidden { overflow: hidden !important; }
+.overflow-visible { overflow: visible !important; }
+.overflow-scroll { overflow: scroll !important; }
+
+.overflow-x-auto { overflow-x: auto !important; }
+.overflow-x-hidden { overflow-x: hidden !important; }
+.overflow-x-visible { overflow-x: visible !important; }
+.overflow-x-scroll { overflow-x: scroll !important; }
+
+.overflow-y-auto { overflow-y: auto !important; }
+.overflow-y-hidden { overflow-y: hidden !important; }
+.overflow-y-visible { overflow-y: visible !important; }
+.overflow-y-scroll { overflow-y: scroll !important; }
+
+/* ========================================
+   ПОЗИЦИОНИРОВАНИЕ
+   ======================================== */
+
+.position-static { position: static !important; }
+.position-relative { position: relative !important; }
+.position-absolute { position: absolute !important; }
+.position-fixed { position: fixed !important; }
+.position-sticky { position: sticky !important; }
+
+/* ========================================
+   АНИМАЦИИ (TRANSITIONS)
+   ======================================== */
+
+.transition-fast { transition: var(--transition-fast) !important; }
+.transition-base { transition: var(--transition-base) !important; }
+.transition-slow { transition: var(--transition-slow) !important; }
+.transition-slower { transition: var(--transition-slower) !important; }
+.transition-all { transition: var(--transition-all) !important; }
+.transition-colors { transition: var(--transition-colors) !important; }
+.transition-opacity { transition: var(--transition-opacity) !important; }
+.transition-shadow { transition: var(--transition-shadow) !important; }
+.transition-transform { transition: var(--transition-transform) !important; }
+.transition-none { transition: none !important; }
+
+/* ========================================
+   ПЕРЕКЛЮЧЕНИЕ СТРАНИЦ
+   ======================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-content {
+    display: none;
+    animation: fadeIn var(--transition-slow) ease-in;
+}
+
+.page-content.active {
+    display: block;
+}
+
+/* ========================================
+   ШИРИНА И ВЫСОТА
+   ======================================== */
+
+.w-full { width: 100% !important; }
+.w-auto { width: auto !important; }
+.w-screen { width: 100vw !important; }
+
+.h-full { height: 100% !important; }
+.h-auto { height: auto !important; }
+.h-screen { height: 100vh !important; }
+
+/* ========================================
+   GAP (для Flexbox и Grid)
+   ======================================== */
+
+.gap-0 { gap: var(--spacing-0) !important; }
+.gap-xs { gap: var(--spacing-xs) !important; }
+.gap-sm { gap: var(--spacing-sm) !important; }
+.gap-md { gap: var(--spacing-md) !important; }
+.gap-lg { gap: var(--spacing-lg) !important; }
+.gap-xl { gap: var(--spacing-xl) !important; }

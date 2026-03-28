@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebView2 Start Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e; 
+            color: #fff; 
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            height: 100vh; 
+        }
+        
+        /* Навигация */
+        .tabs { 
+            display: flex; 
+            background: #2d2d2d; 
+            padding: 10px; 
+            border-bottom: 1px solid #3d3d3d; 
+        }
+        
+        .tab { 
+            padding: 12px 20px; 
+            cursor: pointer; 
+            opacity: 0.7; 
+            border-radius: 4px; 
+            transition: background 0.2s;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        
+        .tab:hover { 
+            background: #3d3d3d; 
+            opacity: 1; 
+        }
+        
+        .tab.active { 
+            background: #0078d4; 
+            opacity: 1; 
+            font-weight: bold; 
+        }
+
+        /* Контент */
+        .content-area { 
+            flex: 1; 
+            padding: 20px; 
+            position: relative; 
+            overflow-y: auto;
+        }
+        
+        .page { 
+            display: none; 
+        }
+        
+        .page.active { 
+            display: block; 
+        }
+
+        h1 { 
+            margin-top: 0; 
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #0078d4;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        /* Блоки управления */
+        .control-section {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #3d3d3d;
+        }
+        
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .btn:hover {
+            background: #106ebe;
+        }
+        
+        .btn:disabled {
+            background: #555;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .btn-success { background: #28a745; }
+        .btn-success:hover { background: #218838; }
+        
+        .btn-warning { background: #ffc107; color: #212529; }
+        .btn-warning:hover { background: #e0a800; }
+        
+        .btn-danger { background: #dc3545; }
+        .btn-danger:hover { background: #c82333; }
+        
+        /* Статистика */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .stat-card {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #3d3d3d;
+        }
+        
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0078d4;
+        }
+        
+        .stat-label {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        /* Информационные элементы */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        
+        .info-label {
+            opacity: 0.8;
+        }
+        
+        .info-value {
+            font-weight: 600;
+            color: #0078d4;
+            transition: color 0.15s ease-out;
+        }
+        
+        /* Энергоэффективная анимация обновления */
+        .info-value.updated {
+            color: #28a745;
+        }
+        
+        /* Статус индикаторы */
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .status.online {
+            background: rgba(40, 167, 69, 0.2);
+            color: #28a745;
+        }
+        
+        .status.offline {
+            background: rgba(220, 53, 69, 0.2);
+            color: #dc3545;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Навигация -->
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('home')">🏠 Главная</div>
+            <div class="tab" onclick="switchTab('counters')">📊 Счетчики</div>
+            <div class="tab" onclick="switchTab('settings')">⚙️ Настройки</div>
+            <div class="tab" onclick="switchTab('logs')">📋 Логи</div>
+        </div>
+
+        <!-- Контент -->
+        <div class="content-area">
+            <!-- Главная страница -->
+            <div id="home" class="page active">
+                <h1>WebView2 Start Template</h1>
+                
+                <!-- Управление парсером -->
+                <div class="control-section">
+                    <h2>Пример управления</h2>
+                    <div class="control-buttons">
+                        <button class="btn btn-success" onclick="startParser()" id="startBtn">
+                            ▶️ Запустить
+                        </button>
+                        <button class="btn btn-warning" onclick="stopParser()" id="stopBtn" disabled>
+                            ⏹️ Остановить
+                        </button>
+                        <button class="btn btn-danger" onclick="restartParser()" id="restartBtn">
+                            🔄 Перезапустить
+                        </button>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Статус:</span>
+                            <span class="status offline" id="parserStatus">
+                                <span class="status-dot"></span>
+                                Остановлен
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Интервал обновления:</span>
+                            <span class="info-value" id="updateInterval">0.5 сек</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Активных счетчиков:</span>
+                            <span class="info-value" id="activeCounters">0/7</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Ошибок за сессию:</span>
+                            <span class="info-value" id="errorCount">0</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Блок с 10 значениями от AutoIt -->
+                    <h2>📊 Данные в реальном времени (10 значений)</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Значение 1:</span>
+                            <span class="info-value" id="realtime_value_0">100.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 2:</span>
+                            <span class="info-value" id="realtime_value_1">110.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 3:</span>
+                            <span class="info-value" id="realtime_value_2">120.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 4:</span>
+                            <span class="info-value" id="realtime_value_3">130.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 5:</span>
+                            <span class="info-value" id="realtime_value_4">140.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 6:</span>
+                            <span class="info-value" id="realtime_value_5">150.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 7:</span>
+                            <span class="info-value" id="realtime_value_6">160.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 8:</span>
+                            <span class="info-value" id="realtime_value_7">170.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 9:</span>
+                            <span class="info-value" id="realtime_value_8">180.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Значение 10:</span>
+                            <span class="info-value" id="realtime_value_9">190.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="control-buttons">
+                        <button class="btn" onclick="toggleRealtime()" id="realtimeBtn">
+                            🔄 Переключить режим реального времени
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Быстрая статистика -->
+                <div class="control-section">
+                    <h2>Системная статистика</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="uptime">00:00:00</div>
+                            <div class="stat-label">Время работы</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="totalRequests">0</div>
+                            <div class="stat-label">Всего запросов</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="successRate">0%</div>
+                            <div class="stat-label">Успешность</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="memoryUsage">0 MB</div>
+                            <div class="stat-label">Память</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Страница счетчиков -->
+            <div id="counters" class="page">
+                <h1>Счетчики</h1>
+                <div class="control-section">
+                    <p>Здесь будут отображаться данные счетчиков.</p>
+                    <p>Функционал будет добавлен в следующих версиях.</p>
+                </div>
+            </div>
+
+            <!-- Страница настроек -->
+            <div id="settings" class="page">
+                <h1>Настройки</h1>
+                <div class="control-section">
+                    <p>Параметры конфигурации системы.</p>
+                    <p>Настройки будут добавлены по мере разработки.</p>
+                </div>
+            </div>
+            
+            <!-- Страница логов -->
+            <div id="logs" class="page">
+                <h1>Логи системы</h1>
+                <div class="control-section">
+                    <p>Журнал событий и отладочная информация.</p>
+                    <p>Просмотр логов будет реализован позже.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="engine.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "app_name": "new_app1",
+  "version": "1.0.0",
+  "use_mysql": false,
+  "use_redis": false,
+  "redis_host": "localhost",
+  "redis_port": 6379,
+  "update_interval": 500,
+  "sensor_count": 10,
+  "threshold_warning": 150
+}

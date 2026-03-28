@@ -1,0 +1,49 @@
+/* ===============================================================================
+   badges.css - Стили для бейджей (исправлена контрастность)
+   =============================================================================== */
+
+/* === ИСПРАВЛЕНИЕ КОНТРАСТНОСТИ БЕЙДЖЕЙ === */
+
+/* Универсальное правило - белый текст на всех цветных бейджах */
+.badge.bg-success,
+.badge.bg-warning,
+.badge.bg-danger,
+.badge.bg-info,
+.badge.bg-primary {
+    color: #ffffff !important;
+}
+
+/* Светлая тема - делаем текст белым на цветных фонах */
+[data-bs-theme="light"] .badge.bg-success,
+[data-bs-theme="light"] .badge.bg-warning,
+[data-bs-theme="light"] .badge.bg-danger,
+[data-bs-theme="light"] .badge.bg-info,
+[data-bs-theme="light"] .badge.bg-primary {
+    color: #ffffff !important;
+}
+
+/* Тёмная тема - также белый текст */
+[data-bs-theme="dark"] .badge.bg-success,
+[data-bs-theme="dark"] .badge.bg-warning,
+[data-bs-theme="dark"] .badge.bg-danger,
+[data-bs-theme="dark"] .badge.bg-info,
+[data-bs-theme="dark"] .badge.bg-primary {
+    color: #ffffff !important;
+}
+
+/* Дополнительно: улучшаем контрастность для bg-warning (оранжевый) */
+.badge.bg-warning {
+    background-color: #f76707 !important;
+    color: #ffffff !important;
+}
+
+/* Дополнительно: улучшаем контрастность для bg-success (зелёный) */
+.badge.bg-success {
+    background-color: #2fb344 !important;
+    color: #ffffff !important;
+}
+
+/* Жирность текста в бейджах */
+.badge {
+    font-weight: var(--font-weight-medium) !important;
+}

@@ -1,0 +1,503 @@
+/* ===============================================================================
+   gallery.css - Стили для страницы Галерея карточек (page5)
+   =============================================================================== */
+
+/* Карточки с иконками - улучшенные аватары */
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+}
+
+/* Карточки со статусами - улучшенная полоска сверху */
+.card-status-top {
+    height: 3px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+/* Таблица в карточке - убираем лишние отступы */
+.card-table {
+    margin-bottom: 0;
+}
+
+.card-table thead th {
+    background: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+/* Прогресс-бары в карточках */
+.progress {
+    height: 0.5rem;
+}
+
+/* Datagrid - улучшенный вид */
+.datagrid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.datagrid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.datagrid-item:last-child {
+    border-bottom: none;
+}
+
+.datagrid-title {
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.datagrid-content {
+    font-weight: 600;
+}
+
+/* Формы - убираем мерцание */
+.form-select,
+.form-check-input {
+    transition: var(--transition-colors);
+}
+
+/* Бейджи с улучшенной контрастностью */
+.badge {
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Карточки - hover эффект без transform */
+.card {
+    transition: var(--transition-colors);
+}
+
+/* Таблица - hover строк */
+.table-vcenter tbody tr {
+    transition: var(--transition-colors);
+}
+
+.table-vcenter tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Адаптация под тёмную тему */
+[data-bs-theme="dark"] .datagrid-item {
+    border-bottom-color: var(--border-color-dark);
+}
+
+[data-bs-theme="dark"] .card-table thead th {
+    color: var(--text-color-dark);
+}
+
+/* Цветные аватары для тёмной темы */
+[data-bs-theme="dark"] .bg-primary {
+    background-color: #206bc4 !important;
+}
+
+[data-bs-theme="dark"] .bg-green {
+    background-color: #2fb344 !important;
+}
+
+[data-bs-theme="dark"] .bg-twitter {
+    background-color: #1da1f2 !important;
+}
+
+[data-bs-theme="dark"] .bg-facebook {
+    background-color: #1877f2 !important;
+}
+
+
+/* ========================================
+   ТАБЛИЦА СОБЫТИЙ - ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
+   ======================================== */
+
+/* Дополнительные цветные бейджи */
+.badge.bg-cyan {
+    background-color: #17a2b8 !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-teal {
+    background-color: #20c997 !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-purple {
+    background-color: #6f42c1 !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+    color: #ffffff !important;
+}
+
+/* Светлые бейджи для приоритетов */
+.badge.bg-cyan-lt {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: #17a2b8;
+}
+
+.badge.bg-teal-lt {
+    background-color: rgba(32, 201, 151, 0.1);
+    color: #20c997;
+}
+
+.badge.bg-purple-lt {
+    background-color: rgba(111, 66, 193, 0.1);
+    color: #6f42c1;
+}
+
+.badge.bg-gray-lt {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+}
+
+.badge.bg-secondary-lt {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+}
+
+.badge.bg-primary-lt {
+    background-color: rgba(32, 107, 196, 0.1);
+    color: #206bc4;
+}
+
+.badge.bg-red-lt {
+    background-color: rgba(214, 57, 57, 0.1);
+    color: #d63939;
+}
+
+.badge.bg-yellow-lt {
+    background-color: rgba(245, 159, 0, 0.1);
+    color: #f59f00;
+}
+
+/* Цветной текст */
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+/* Жирность шрифта */
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+/* Фоновые цвета строк */
+.table-events tbody tr.table-warning {
+    background-color: rgba(245, 159, 0, 0.05);
+}
+
+.table-events tbody tr.table-danger {
+    background-color: rgba(214, 57, 57, 0.05);
+}
+
+.table-events tbody tr.table-info {
+    background-color: rgba(66, 153, 225, 0.05);
+}
+
+.table-events tbody tr.table-success {
+    background-color: rgba(47, 179, 68, 0.05);
+}
+
+/* Адаптация под тёмную тему */
+[data-bs-theme="dark"] .badge.bg-cyan {
+    background-color: #20c4db !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-teal {
+    background-color: #34d399 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-purple {
+    background-color: #9061f9 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-secondary {
+    background-color: #8b95a1 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-cyan-lt {
+    background-color: rgba(32, 196, 219, 0.15);
+    color: #20c4db;
+}
+
+[data-bs-theme="dark"] .badge.bg-teal-lt {
+    background-color: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+}
+
+[data-bs-theme="dark"] .badge.bg-purple-lt {
+    background-color: rgba(144, 97, 249, 0.15);
+    color: #9061f9;
+}
+
+[data-bs-theme="dark"] .badge.bg-gray-lt {
+    background-color: rgba(139, 149, 161, 0.15);
+    color: #8b95a1;
+}
+
+[data-bs-theme="dark"] .text-purple {
+    color: #9061f9 !important;
+}
+
+[data-bs-theme="dark"] .table-events tbody tr.table-warning {
+    background-color: rgba(245, 159, 0, 0.1);
+}
+
+[data-bs-theme="dark"] .table-events tbody tr.table-danger {
+    background-color: rgba(214, 57, 57, 0.1);
+}
+
+[data-bs-theme="dark"] .table-events tbody tr.table-info {
+    background-color: rgba(66, 153, 225, 0.1);
+}
+
+[data-bs-theme="dark"] .table-events tbody tr.table-success {
+    background-color: rgba(47, 179, 68, 0.1);
+}
+
+
+/* ========================================
+   ТАБЛИЦА С ФИКСИРОВАННОЙ ШИРИНОЙ
+   ======================================== */
+
+/* Фиксированная ширина столбцов */
+.table-fixed-width {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-fixed-width .w-icon {
+    width: 80px;
+    text-align: center;
+}
+
+.table-fixed-width .w-name {
+    width: 200px;
+    text-align: center;
+}
+
+.table-fixed-width .w-status {
+    width: 120px;
+    text-align: center;
+}
+
+.table-fixed-width .w-version {
+    width: 100px;
+    text-align: center;
+}
+
+.table-fixed-width .w-load {
+    width: 100px;
+    text-align: center;
+}
+
+.table-fixed-width .w-actions {
+    width: 140px;
+    text-align: center;
+}
+
+/* Вертикальные и горизонтальные разделители - УСИЛЕННЫЕ */
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6 !important;
+    border-right: 1px solid rgba(32, 107, 196, 0.2) !important;
+}
+
+/* Последний столбец без правой границы */
+.table-bordered th:last-child,
+.table-bordered td:last-child {
+    border-right: 1px solid #dee2e6 !important;
+}
+
+/* Заголовки с более толстой нижней границей */
+.table-bordered thead th {
+    border-bottom: 3px solid var(--tblr-primary) !important;
+    background-color: rgba(var(--tblr-primary-rgb), 0.05);
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Подсветка строки при наведении */
+.table-hover tbody tr:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.05);
+    cursor: pointer;
+}
+
+/* Подсветка ячейки при наведении */
+.table-hover tbody tr td:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+/* Выравнивание по центру */
+.table-fixed-width td.text-center,
+.table-fixed-width th.text-center {
+    vertical-align: middle;
+}
+
+/* Бейджи на всю ширину */
+.table-fixed-width .badge.w-100 {
+    display: block;
+    width: 100% !important;
+}
+
+/* Кнопки одинакового размера */
+.table-fixed-width .btn-sm {
+    min-width: 100px;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Иконки в таблице */
+.table-fixed-width .icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Изменяемый размер столбцов */
+.table-fixed-width th {
+    position: relative;
+    user-select: none;
+}
+
+.table-fixed-width th::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    cursor: col-resize;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.table-fixed-width th:hover::after {
+    background-color: var(--tblr-primary);
+    opacity: 0.3;
+}
+
+/* Адаптация под тёмную тему */
+[data-bs-theme="dark"] .table-bordered th,
+[data-bs-theme="dark"] .table-bordered td {
+    border-color: #495057 !important;
+    border-right-color: rgba(32, 107, 196, 0.3) !important;
+}
+
+[data-bs-theme="dark"] .table-bordered th:last-child,
+[data-bs-theme="dark"] .table-bordered td:last-child {
+    border-right-color: #495057 !important;
+}
+
+[data-bs-theme="dark"] .table-bordered thead th {
+    border-bottom-color: var(--tblr-primary) !important;
+    background-color: rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+[data-bs-theme="dark"] .table-hover tbody tr:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+[data-bs-theme="dark"] .table-hover tbody tr td:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.15);
+}
+
+
+/* ========================================
+   КАРТОЧКА "ИНФОРМАЦИЯ О СИСТЕМЕ"
+   ======================================== */
+
+/* Карточка с цветным заголовком */
+.card-system-info .card-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 2px solid var(--tblr-primary);
+}
+
+.card-system-info .card-header .card-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-system-info .card-header .icon {
+    flex-shrink: 0;
+}
+
+/* Элементы информации */
+.system-info-item {
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    background-color: rgba(var(--tblr-primary-rgb), 0.03);
+    transition: var(--transition-colors);
+}
+
+.system-info-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.08);
+}
+
+/* Метки (labels) */
+.system-info-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+/* Значения (values) */
+.system-info-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Крупные значения */
+.system-info-value .fs-3 {
+    line-height: 1.2;
+}
+
+.system-info-value .fs-4 {
+    line-height: 1.2;
+}
+
+/* Бейджи в значениях */
+.system-info-value .badge {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+/* Адаптация под тёмную тему */
+[data-bs-theme="dark"] .card-system-info .card-header {
+    border-bottom-color: var(--tblr-primary);
+}
+
+[data-bs-theme="dark"] .system-info-item {
+    background-color: rgba(var(--tblr-primary-rgb), 0.08);
+}
+
+[data-bs-theme="dark"] .system-info-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.15);
+}
+
+[data-bs-theme="dark"] .system-info-label {
+    color: var(--text-muted-dark);
+}
+
+[data-bs-theme="dark"] .system-info-value {
+    color: var(--text-color-dark);
+}

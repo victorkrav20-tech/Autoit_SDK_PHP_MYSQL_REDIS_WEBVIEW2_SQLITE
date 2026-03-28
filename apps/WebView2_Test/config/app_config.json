@@ -1,0 +1,67 @@
+{
+	"app": {
+		"name": "Ultra_WebView2_Test_Multi",
+		"version": "1.0.0",
+		"autostart": false
+	},
+	"windows": {
+		"window_1": {
+			"title": "Main Window",
+			"show_on_startup": true,
+			"remember_position": true,
+			"remember_size": true,
+			"minimize_to_tray": false,
+			"freeze_on_hide": false,
+			"hide_mode": "minimize",
+			"style": "default",
+			"position": {
+				"x": 100,
+				"y": 100
+			},
+			"size": {
+				"width": 1117,
+				"height": 839
+			},
+			"state": "normal"
+		},
+		"window_5": {
+			"position": {
+				"x": 979,
+				"y": 332
+			},
+			"size": {
+				"width": 583,
+				"height": 795
+			}
+		},
+		"window_4": {
+			"position": {
+				"x": 484,
+				"y": 291
+			},
+			"size": {
+				"width": 816,
+				"height": 639
+			}
+		},
+		"window_3": {
+			"position": {
+				"x": 371,
+				"y": 248
+			},
+			"size": {
+				"width": 816,
+				"height": 639
+			}
+		}
+	},
+	"hotkeys": {
+		"toggle_window": "F2",
+		"exit_app": "Ctrl+Alt+Q"
+	},
+	"tray": {
+		"enabled": false,
+		"tooltip": "Ultra_WebView2_Test_Multi",
+		"show_notifications": true
+	}
+}

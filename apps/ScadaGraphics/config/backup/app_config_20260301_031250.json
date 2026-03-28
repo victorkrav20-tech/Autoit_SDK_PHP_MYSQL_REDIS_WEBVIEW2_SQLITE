@@ -1,0 +1,37 @@
+{
+	"app": {
+		"name": "new_app1",
+		"version": "1.0.0",
+		"autostart": false
+	},
+	"windows": {
+		"window_1": {
+			"title": "Main Window",
+			"show_on_startup": true,
+			"remember_position": true,
+			"remember_size": true,
+			"minimize_to_tray": false,
+			"freeze_on_hide": false,
+			"hide_mode": "minimize",
+			"style": "default",
+			"position": {
+				"x": 25,
+				"y": 60
+			},
+			"size": {
+				"width": 1794,
+				"height": 857
+			},
+			"state": "normal"
+		}
+	},
+	"hotkeys": {
+		"toggle_window": "F2",
+		"exit_app": "Ctrl+Alt+Q"
+	},
+	"tray": {
+		"enabled": false,
+		"tooltip": "new_app1",
+		"show_notifications": true
+	}
+}
