@@ -1,0 +1,82 @@
+{
+  "mcpServers": {
+    "sdk-universal": {
+      "command": "D:/OSPanel/domains/localhost/mcp_servers/venv/Scripts/python.exe",
+      "args": [
+        "D:/OSPanel/domains/localhost/mcp_servers/SDK_Universal_MCP/mcp_server.py"
+      ],
+      "cwd": "D:/OSPanel/domains/localhost",
+      "disabled": false,
+      "autoApprove": [
+        "SDK_Mcp_Tool"
+      ],
+      "disabledTools": []
+    },
+    "sdk-codemapper": {
+      "command": "D:/OSPanel/domains/localhost/mcp_servers/venv/Scripts/python.exe",
+      "args": [
+        "D:/OSPanel/domains/localhost/mcp_servers/sdk_codemapper/server.py"
+      ],
+      "cwd": "D:/OSPanel/domains/localhost",
+      "disabled": true,
+      "autoApprove": [
+        "find_function_by_name",
+        "get_function_code",
+        "list_functions_in_file",
+        "search_functions",
+        "scan_project",
+        "get_function_calls",
+        "get_global_variables",
+        "get_file_structure",
+        "validate_syntax",
+        "replace_function_code",
+        "replace_in_function",
+        "insert_code",
+        "delete_function",
+        "validate_function_standards",
+        "update_file_header",
+        "update_function_header",
+        "rename_function",
+        "get_function_dependencies",
+        "scan_folder",
+        "run_autoit_script",
+        "run_autoit_script"
+      ],
+      "disabledTools": [
+        "scan_project",
+        "search_functions",
+        "replace_in_function",
+        "delete_function",
+        "get_function_calls",
+        "get_global_variables",
+        "validate_function_standards",
+        "update_file_header",
+        "update_function_header",
+        "get_function_dependencies",
+        "find_function_by_name",
+        "rename_function",
+        "get_function_code",
+        "list_functions_in_file",
+        "scan_folder",
+        "replace_function_code",
+        "insert_code",
+        "get_file_structure"
+      ]
+    },
+    "sdk-assistant": {
+      "command": "D:/OSPanel/domains/localhost/mcp_servers/venv/Scripts/python.exe",
+      "args": [
+        "D:/OSPanel/domains/localhost/mcp_servers/sdk_assistant/server.py"
+      ],
+      "cwd": "D:/OSPanel/domains/localhost",
+      "disabled": true,
+      "autoApprove": [
+        "ask_about_code",
+        "check_all_headers",
+        "explain_function",
+        "find_similar_code"
+      ],
+      "disabledTools": []
+    }
+  }
+}
