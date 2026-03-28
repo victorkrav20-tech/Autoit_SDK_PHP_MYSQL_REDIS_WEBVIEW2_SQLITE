@@ -1,0 +1,252 @@
+/* ===============================================================================
+   variables.css - CSS переменные для всего приложения
+   ПОЛНАЯ БАЗА - Источник истины для всех стилей
+   Переопределяет переменные Tabler + добавляет свои
+   =============================================================================== */
+
+:root {
+    /* ========================================
+       ШРИФТЫ
+       ======================================== */
+    
+    /* Переопределяем шрифт Tabler для Win7/Win10 */
+    --tblr-font-sans-serif: "Segoe UI", Tahoma, Arial, sans-serif !important;
+    --tblr-font-monospace: "Consolas", "Courier New", monospace !important;
+    
+    /* Жирность шрифтов для читаемости на Win7/Win10 */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Базовая жирность текста */
+    --tblr-body-font-weight: 400 !important;
+    
+    /* Размеры шрифтов */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    
+    /* Высота строки */
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    
+    /* ========================================
+       ЦВЕТА
+       ======================================== */
+    
+    /* Переопределяем основные цвета Tabler под SCADA */
+    --tblr-primary: #206bc4 !important;
+    --tblr-success: #2fb344 !important;
+    --tblr-warning: #f59f00 !important;
+    --tblr-danger: #d63939 !important;
+    --tblr-info: #4299e1 !important;
+    
+    /* Дополнительные цвета для SCADA */
+    --color-status-ok: var(--tblr-success);
+    --color-status-warning: var(--tblr-warning);
+    --color-status-error: var(--tblr-danger);
+    --color-status-info: var(--tblr-info);
+    
+    /* Серые оттенки (используем Tabler) */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    
+    /* ========================================
+       ОТСТУПЫ (SPACING)
+       ======================================== */
+    
+    --spacing-0: 0;
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 2.5rem;   /* 40px */
+    --spacing-3xl: 3rem;     /* 48px */
+    
+    /* Переопределяем отступы Tabler */
+    --tblr-gutter-x: 1.5rem;
+    --tblr-gutter-y: 1.5rem;
+    
+    /* ========================================
+       ТЕНИ (SHADOWS)
+       ======================================== */
+    
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    --shadow-none: none;
+    
+    /* ========================================
+       РАДИУСЫ СКРУГЛЕНИЯ (BORDER RADIUS)
+       ======================================== */
+    
+    --radius-none: 0;
+    --radius-sm: 0.125rem;   /* 2px */
+    --radius-md: 0.25rem;    /* 4px */
+    --radius-lg: 0.5rem;     /* 8px */
+    --radius-xl: 0.75rem;    /* 12px */
+    --radius-2xl: 1rem;      /* 16px */
+    --radius-3xl: 1.5rem;    /* 24px */
+    --radius-full: 9999px;   /* Круглый */
+    
+    /* ========================================
+       Z-INDEX СЛОИ
+       ======================================== */
+    
+    --z-base: 0;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-offcanvas: 1060;
+    --z-popover: 1070;
+    --z-tooltip: 1080;
+    
+    /* ========================================
+       РАЗМЕРЫ (SIZING)
+       ======================================== */
+    
+    --size-xs: 1.5rem;   /* 24px */
+    --size-sm: 2rem;     /* 32px */
+    --size-md: 2.5rem;   /* 40px */
+    --size-lg: 3rem;     /* 48px */
+    --size-xl: 4rem;     /* 64px */
+    --size-2xl: 5rem;    /* 80px */
+    
+    /* ========================================
+       ШИРИНА КОНТЕЙНЕРОВ
+       ======================================== */
+    
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    
+    /* ========================================
+       ПРОЗРАЧНОСТЬ (OPACITY)
+       ======================================== */
+    
+    --opacity-0: 0;
+    --opacity-5: 0.05;
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-25: 0.25;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-75: 0.75;
+    --opacity-80: 0.8;
+    --opacity-85: 0.85;
+    --opacity-90: 0.9;
+    --opacity-95: 0.95;
+    --opacity-100: 1;
+    
+    /* Специальные значения для UI */
+    --opacity-disabled: 0.5;
+    --opacity-hover: 0.8;
+    --opacity-muted: 0.6;
+    
+    /* ========================================
+       АНИМАЦИИ (TRANSITIONS)
+       ======================================== */
+    
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.2s ease;
+    --transition-slow: 0.3s ease;
+    --transition-slower: 0.5s ease;
+    
+    /* Специфичные transitions */
+    --transition-colors: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    --transition-opacity: opacity 0.2s ease;
+    --transition-shadow: box-shadow 0.2s ease;
+    --transition-transform: transform 0.2s ease;
+    --transition-all: all 0.2s ease;
+    
+    /* ========================================
+       ПРОГРЕСС-БАРЫ
+       ======================================== */
+    
+    --progress-height: 0.5rem;
+    --progress-height-sm: 0.375rem;
+    --progress-height-lg: 1rem;
+    --progress-bg-light: #e9ecef;
+    --progress-bg-dark: #2d3748;
+    --progress-border-light: #dee2e6;
+    --progress-border-dark: #4a5568;
+    
+    /* ========================================
+       ГРАНИЦЫ (BORDERS)
+       ======================================== */
+    
+    --border-width-0: 0;
+    --border-width-1: 1px;
+    --border-width-2: 2px;
+    --border-width-4: 4px;
+    --border-width-8: 8px;
+    
+    --border-color-light: #e5e7eb;
+    --border-color-dark: #374151;
+    
+    /* ========================================
+       BREAKPOINTS (для адаптивности)
+       ======================================== */
+    
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+
+/* ========================================
+   ПЕРЕМЕННЫЕ ДЛЯ ТЁМНОЙ ТЕМЫ
+   ======================================== */
+
+[data-bs-theme="dark"] {
+    --progress-bg: var(--progress-bg-dark);
+    --progress-border: var(--progress-border-dark);
+    --border-color: var(--border-color-dark);
+    
+    /* Тени для тёмной темы (более мягкие) */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================
+   ПЕРЕМЕННЫЕ ДЛЯ СВЕТЛОЙ ТЕМЫ
+   ======================================== */
+
+[data-bs-theme="light"] {
+    --progress-bg: var(--progress-bg-light);
+    --progress-border: var(--progress-border-light);
+    --border-color: var(--border-color-light);
+}

@@ -1,0 +1,190 @@
+/* ===============================================================================
+   header.css - Стили для header-component
+   Использует переменные из core/variables.css
+   ОПТИМИЗИРОВАНО - убраны тяжёлые эффекты
+   =============================================================================== */
+
+/* ========================================
+   ЛОГОТИП
+   ======================================== */
+
+.logo-icon {
+    width: 48px !important;
+    height: 48px !important;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(70%) saturate(2500%) hue-rotate(200deg) brightness(85%) contrast(100%);
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Логотип для тёмной темы */
+[data-bs-theme="dark"] .logo-icon {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(80%) saturate(1800%) hue-rotate(200deg) brightness(105%) contrast(95%);
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    border-bottom: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-md) 0;
+    /* Расширяем header на всю ширину окна */
+    margin-left: calc(-1 * var(--bs-gutter-x, 0.75rem));
+    margin-right: calc(-1 * var(--bs-gutter-x, 0.75rem));
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+}
+
+/* Стандартный контейнер Tabler - убираем кастомизацию */
+.navbar .container-xl {
+    /* Используем стандартные настройки Tabler */
+}
+
+.navbar-brand {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    transition: var(--transition-colors);
+    margin-right: var(--spacing-md);
+}
+
+/* Навигация ближе к логотипу */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-collapse .d-flex {
+    justify-content: flex-start;
+}
+
+/* ========================================
+   DROPDOWN НАСТРОЕК ТЕМЫ
+   ======================================== */
+
+/* Кнопка выбора темы - синяя с фоном */
+.navbar .nav-item.dropdown > .nav-link {
+    background: linear-gradient(135deg, rgba(32, 107, 196, 0.1) 0%, rgba(66, 153, 225, 0.15) 100%);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
+    transition: var(--transition-colors);
+}
+
+.navbar .nav-item.dropdown > .nav-link:hover {
+    background: linear-gradient(135deg, rgba(32, 107, 196, 0.2) 0%, rgba(66, 153, 225, 0.25) 100%);
+}
+
+.navbar .nav-item.dropdown > .nav-link .icon {
+    color: #206bc4;
+    stroke-width: 2.5;
+}
+
+[data-bs-theme="dark"] .navbar .nav-item.dropdown > .nav-link {
+    background: linear-gradient(135deg, rgba(66, 153, 225, 0.15) 0%, rgba(32, 107, 196, 0.2) 100%);
+}
+
+[data-bs-theme="dark"] .navbar .nav-item.dropdown > .nav-link:hover {
+    background: linear-gradient(135deg, rgba(66, 153, 225, 0.25) 0%, rgba(32, 107, 196, 0.3) 100%);
+}
+
+[data-bs-theme="dark"] .navbar .nav-item.dropdown > .nav-link .icon {
+    color: #4299e1;
+}
+
+.navbar .dropdown-menu {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 2px solid rgba(32, 107, 196, 0.3);
+    padding: var(--spacing-sm);
+    min-width: 250px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+    backdrop-filter: blur(10px);
+}
+
+[data-bs-theme="dark"] .navbar .dropdown-menu {
+    border-color: rgba(66, 153, 225, 0.4);
+    background: linear-gradient(135deg, #1a2942 0%, #2a3f5f 100%);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .dropdown-header {
+    color: #206bc4;
+    font-weight: var(--font-weight-semibold);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: var(--spacing-xs) var(--spacing-md);
+}
+
+[data-bs-theme="dark"] .navbar .dropdown-header {
+    color: #4299e1;
+}
+
+.navbar .dropdown-item {
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: var(--font-weight-normal);
+    transition: var(--transition-colors);
+}
+
+.navbar .dropdown-item:hover {
+    background-color: rgba(32, 107, 196, 0.15);
+}
+
+[data-bs-theme="dark"] .navbar .dropdown-item:hover {
+    background-color: rgba(66, 153, 225, 0.2);
+}
+
+.navbar .dropdown-item.active {
+    background: linear-gradient(135deg, #206bc4 0%, #4299e1 100%);
+    color: white;
+}
+
+.navbar .dropdown-item .icon {
+    color: #206bc4;
+}
+
+[data-bs-theme="dark"] .navbar .dropdown-item .icon {
+    color: #4299e1;
+}
+
+.navbar .dropdown-item.active .icon {
+    color: white;
+}
+
+.navbar .dropdown-divider {
+    margin: var(--spacing-sm) 0;
+    opacity: var(--opacity-20);
+    border-color: rgba(32, 107, 196, 0.2);
+}
+
+[data-bs-theme="dark"] .navbar .dropdown-divider {
+    border-color: rgba(66, 153, 225, 0.3);
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    
+    .navbar-brand {
+        font-size: var(--font-size-lg);
+        margin-left: var(--spacing-sm);
+    }
+    
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    /* Отступ для гамбургера на мобильных */
+    .navbar-toggler {
+        margin-left: var(--spacing-sm);
+    }
+}

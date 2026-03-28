@@ -1,0 +1,333 @@
+/* ===============================================================================
+   Online Grid - Стили для DIV сетки счётчиков
+   Оптимизировано для минимальной нагрузки на CPU
+   =============================================================================== */
+
+/* ===============================================================================
+   Сетка счётчиков
+   =============================================================================== */
+
+.counters-grid {
+    display: grid;
+    /* Процентные колонки с минимальными значениями */
+    grid-template-columns: 
+        minmax(40px, 5%)        /* № - 5% */
+        minmax(120px, 25%)      /* Название - 25% */
+        minmax(90px, 15%)       /* Статус данных - 15% */
+        minmax(120px, 25%)      /* Работа счётчика - 25% */
+        minmax(90px, 12%)       /* Последние данные - 12% */
+        minmax(130px, 18%);     /* Управление - 18% */
+    /* Итого: 5% + 25% + 15% + 25% + 12% + 18% = 100% */
+    gap: 0;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Адаптивность для средних экранов */
+@media (max-width: 1200px) {
+    .counters-grid {
+        grid-template-columns: 
+            minmax(35px, 5%)        /* № */
+            minmax(100px, 25%)      /* Название */
+            minmax(80px, 15%)       /* Статус данных */
+            minmax(100px, 25%)      /* Работа счётчика */
+            minmax(80px, 12%)       /* Последние данные */
+            minmax(110px, 18%);     /* Управление */
+        font-size: 0.85rem;
+    }
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 900px) {
+    .counters-grid {
+        grid-template-columns: 
+            minmax(30px, 5%)        /* № */
+            minmax(80px, 25%)       /* Название */
+            minmax(70px, 15%)       /* Статус данных */
+            minmax(90px, 25%)       /* Работа счётчика */
+            minmax(70px, 12%)       /* Последние данные */
+            minmax(100px, 18%);     /* Управление */
+        font-size: 0.8rem;
+    }
+}
+
+/* Заголовок */
+.grid-header {
+    display: contents;
+}
+
+.grid-header .grid-cell {
+    background: #f8fafc;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #475569;
+    padding: 12px 16px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Строка счётчика */
+.grid-row {
+    display: contents;
+}
+
+.grid-row .grid-cell {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    background: white;
+}
+
+.grid-row:hover .grid-cell {
+    background: #f8fafc;
+}
+
+/* Ячейки */
+.grid-cell {
+    display: flex;
+    align-items: center;
+}
+
+.cell-num {
+    justify-content: center;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.cell-name {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.cell-buttons {
+    gap: 8px;
+}
+
+/* ===============================================================================
+   Название счётчика
+   =============================================================================== */
+
+.counter-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+.counter-type {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* ===============================================================================
+   Статусы
+   =============================================================================== */
+
+.status-badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.status-fresh {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.status-stale {
+    background: #fef3c7;
+    color: #ca8a04;
+}
+
+.status-timeout {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.status-none {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* ===============================================================================
+   Статус работы
+   =============================================================================== */
+
+.working-status {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.working-badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.working-success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.working-warning {
+    background: #fef3c7;
+    color: #ca8a04;
+}
+
+.working-secondary {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.working-flow {
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+/* ===============================================================================
+   Время
+   =============================================================================== */
+
+.time-active {
+    color: #1e293b;
+    font-size: 0.875rem;
+}
+
+.time-inactive {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* ===============================================================================
+   Кнопки управления
+   =============================================================================== */
+
+.btn-mini {
+    min-width: 60px;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background: white;
+    color: #64748b;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-mini:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.btn-mini:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-mini.btn-active {
+    background: #dcfce7;
+    color: #16a34a;
+    border-color: #86efac;
+}
+
+.btn-mini.btn-visible {
+    background: #dbeafe;
+    color: #2563eb;
+    border-color: #93c5fd;
+}
+
+.btn-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e2e8f0;
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ===============================================================================
+   Адаптивность
+   =============================================================================== */
+
+/* Убираем старые media queries - они выше в основном блоке */
+
+/* Очень маленькие экраны - вертикальный layout */
+@media (max-width: 768px) {
+    .counters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-header {
+        display: none;
+    }
+    
+    .grid-row .grid-cell {
+        border-bottom: none;
+        padding: 8px 12px;
+        justify-content: center; /* Центрируем содержимое */
+        text-align: center; /* Центрируем текст */
+    }
+    
+    .grid-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 12px;
+        border-bottom: 1px solid #f1f5f9;
+    }
+    
+    /* Центрируем название */
+    .cell-name {
+        align-items: center; /* Центрируем по горизонтали */
+    }
+    
+    /* Центрируем кнопки */
+    .cell-buttons {
+        justify-content: center; /* Центрируем кнопки */
+    }
+}
+
+/* ===============================================================================
+   Тёмная тема
+   =============================================================================== */
+
+[data-bs-theme="dark"] .counters-grid {
+    border-color: #334155;
+}
+
+[data-bs-theme="dark"] .grid-header .grid-cell {
+    background: #1e293b;
+    color: #cbd5e1;
+    border-bottom-color: #334155;
+}
+
+[data-bs-theme="dark"] .grid-row .grid-cell {
+    background: #0f172a;
+    border-bottom-color: #1e293b;
+}
+
+[data-bs-theme="dark"] .grid-row:hover .grid-cell {
+    background: #1e293b;
+}
+
+[data-bs-theme="dark"] .counter-name {
+    color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .btn-mini {
+    background: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+[data-bs-theme="dark"] .btn-mini:hover:not(:disabled) {
+    background: #334155;
+}

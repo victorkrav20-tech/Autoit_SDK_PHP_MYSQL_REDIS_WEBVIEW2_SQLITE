@@ -1,0 +1,153 @@
+/* ===============================================================================
+   Online Page - Стили страницы мониторинга счётчиков
+   Версия: 1.0.0
+   =============================================================================== */
+
+/* ===============================================================================
+   Таблица счётчиков
+   =============================================================================== */
+
+/* Оптимизация таблицы - фиксированная ширина колонок */
+.table-vcenter {
+    table-layout: fixed; /* Браузер не пересчитывает ширину при обновлении */
+}
+
+.table-vcenter td {
+    vertical-align: middle;
+}
+
+/* Фиксированные ширины колонок для table-layout: fixed */
+.table-vcenter th:nth-child(1),
+.table-vcenter td:nth-child(1) {
+    width: 50px; /* № */
+}
+
+.table-vcenter th:nth-child(2),
+.table-vcenter td:nth-child(2) {
+    width: 200px; /* Название */
+}
+
+.table-vcenter th:nth-child(3),
+.table-vcenter td:nth-child(3) {
+    width: 120px; /* Статус данных */
+}
+
+.table-vcenter th:nth-child(4),
+.table-vcenter td:nth-child(4) {
+    width: 180px; /* Работа счётчика */
+}
+
+.table-vcenter th:nth-child(5),
+.table-vcenter td:nth-child(5) {
+    width: 150px; /* Последние данные */
+}
+
+.table-vcenter th:nth-child(6),
+.table-vcenter td:nth-child(6) {
+    width: 100px; /* Парсинг */
+}
+
+.table-vcenter th:nth-child(7),
+.table-vcenter td:nth-child(7) {
+    width: 120px; /* Окно */
+}
+
+/* Оптимизация обновляемых ячеек */
+.table-vcenter td[id*="-data-status"],
+.table-vcenter td[id*="-working-status"],
+.table-vcenter td[id*="-last-time"] {
+    will-change: contents; /* Оптимизация перерисовки */
+}
+
+/* Название счётчика */
+.counter-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+/* Тип счётчика */
+.counter-name + .text-muted {
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+/* ===============================================================================
+   Статусы
+   =============================================================================== */
+
+/* Статус данных */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Статус работы счётчика */
+#counters-table-body [id$="-working-status"] .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+}
+
+#counters-table-body [id$="-working-status"] .small {
+    font-size: 0.7rem;
+    margin-top: 4px;
+}
+
+/* ===============================================================================
+   Кнопки управления
+   =============================================================================== */
+
+.btn-toggle-parsing,
+.btn-toggle-window {
+    min-width: 70px;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+    font-weight: 600;
+}
+
+.btn-toggle-parsing:hover,
+.btn-toggle-window:hover {
+    opacity: 0.9;
+}
+
+.btn-toggle-parsing:disabled,
+.btn-toggle-window:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ===============================================================================
+   Индикатор обновления
+   =============================================================================== */
+
+#update-indicator {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+}
+
+/* ===============================================================================
+   Адаптивность
+   =============================================================================== */
+
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+    
+    .btn-toggle-parsing,
+    .btn-toggle-window {
+        min-width: 60px;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .counter-name {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===============================================================================
+   Анимации - ОТКЛЮЧЕНЫ для оптимизации
+   =============================================================================== */

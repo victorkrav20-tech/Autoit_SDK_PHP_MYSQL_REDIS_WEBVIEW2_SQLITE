@@ -1,0 +1,253 @@
+/* ===============================================================================
+   settings.css - Специфичные стили для страницы Настройки (page3)
+   Использует переменные из core/variables.css
+   =============================================================================== */
+
+/* ========================================
+   ФОРМЫ НАСТРОЕК (ОПТИМИЗИРОВАНО - БЕЗ TRANSITIONS)
+   ======================================== */
+
+#page3 .form-label {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+    color: inherit;
+}
+
+#page3 .form-control,
+#page3 .form-select {
+    border-radius: var(--radius-md);
+    border: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+}
+
+#page3 .form-control:focus,
+#page3 .form-select:focus {
+    border-color: var(--tblr-primary);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-primary-rgb), 0.1);
+    outline: none;
+}
+
+#page3 .form-control:hover,
+#page3 .form-select:hover {
+    border-color: var(--tblr-primary);
+}
+
+/* ========================================
+   ПЕРЕКЛЮЧАТЕЛИ (SWITCHES) - ОПТИМИЗИРОВАНО
+   ======================================== */
+
+#page3 .form-check {
+    /* Убрали padding-left: 0 - ломало позиционирование switches */
+    margin-bottom: var(--spacing-md);
+}
+
+#page3 .form-check-label {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    user-select: none;
+}
+
+#page3 .form-check-input {
+    cursor: pointer;
+}
+
+#page3 .form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+/* ========================================
+   КНОПКИ В FOOTER КАРТОЧКИ (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+#page3 .card-footer {
+    background-color: transparent;
+    border-top: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+#page3 .btn-list {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+#page3 .btn {
+    font-weight: var(--font-weight-medium);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    transition: var(--transition-colors);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+#page3 .btn .icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========================================
+   DATAGRID (Параметры подключения)
+   ======================================== */
+
+#page3 .datagrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+}
+
+#page3 .datagrid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-bottom: var(--border-width-1) solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: var(--transition-colors);
+    cursor: pointer;
+}
+
+#page3 .datagrid-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.05);
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+[data-bs-theme="dark"] #page3 .datagrid-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+#page3 .datagrid-item:last-child {
+    border-bottom: none;
+}
+
+#page3 .datagrid-title {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    opacity: var(--opacity-70);
+}
+
+#page3 .datagrid-content {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    text-align: right;
+}
+
+/* ========================================
+   БЕЙДЖИ В DATAGRID
+   ======================================== */
+
+#page3 .badge {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+}
+
+#page3 .badge-outline {
+    background-color: transparent;
+    border: var(--border-width-1) solid currentColor;
+}
+
+#page3 .badge.text-blue {
+    color: var(--tblr-primary);
+}
+
+/* ========================================
+   СТАТУС ПОДКЛЮЧЕНИЯ
+   ======================================== */
+
+#page3 .status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+}
+
+#page3 .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+}
+
+#page3 .status-success {
+    color: var(--tblr-success);
+}
+
+#page3 .status-success .status-dot {
+    background-color: var(--tblr-success);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-success-rgb), 0.2);
+}
+
+/* ========================================
+   КАРТОЧКИ НАСТРОЕК (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+#page3 .card-header {
+    background-color: transparent;
+    border-bottom: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+#page3 .card-header .card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+}
+
+#page3 .card-body {
+    padding: var(--spacing-lg);
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 768px) {
+    #page3 .card-body {
+        padding: var(--spacing-md);
+    }
+    
+    #page3 .card-header,
+    #page3 .card-footer {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    #page3 .btn-list {
+        flex-direction: column;
+    }
+    
+    #page3 .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #page3 .datagrid-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    #page3 .datagrid-content {
+        text-align: left;
+    }
+}
+
+/* ========================================
+   АНИМАЦИИ (ОПТИМИЗИРОВАННЫЕ)
+   ======================================== */
+
+/* УБРАНА анимация pulse-status - она жрала CPU */
+
+/* Простая анимация при изменении значения в форме */
+#page3 .form-control.changed,
+#page3 .form-select.changed {
+    background-color: rgba(var(--tblr-success-rgb), 0.1);
+    transition: background-color 0.3s ease;
+}

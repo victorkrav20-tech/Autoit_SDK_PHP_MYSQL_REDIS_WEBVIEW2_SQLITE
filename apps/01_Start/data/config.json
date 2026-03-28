@@ -1,0 +1,9 @@
+{
+  "app_name": "Inet_Reader",
+  "version": "1.0.0",
+  "use_mysql": false,
+  "use_redis": false,
+  "redis_host": "localhost",
+  "redis_port": 6379,
+  "update_interval": 500
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewScada1 - SCADA System</title>
+    
+    <!-- Tabler CSS (Local) -->
+    <link href="../../_tabler_engine/css/tabler.min.css" rel="stylesheet">
+    
+    <!-- Tabler Themes (Official) -->
+    <link href="../../_tabler_engine/css/tabler-themes.min.css" rel="stylesheet">
+    
+    <!-- ApexCharts CSS -->
+    <link href="../../_tabler_engine/libs/apexcharts/dist/apexcharts.css" rel="stylesheet">
+    
+    <!-- uPlot CSS -->
+    <link href="../../_tabler_engine/libs/uplot/uPlot.min.css" rel="stylesheet">
+    
+    <!-- Toastify CSS -->
+    <link href="css/toastify.min.css" rel="stylesheet">
+    
+    <!-- Tippy CSS -->
+    <link href="css/tippy.min.css" rel="stylesheet">
+    
+    <!-- Widgets CSS -->
+    <link href="css/widgets.css" rel="stylesheet">
+    
+    <!-- Pages CSS -->
+    <!-- <link href="css/pages/online.css" rel="stylesheet"> -->
+    <!-- <link href="css/pages/online-grid.css" rel="stylesheet"> -->
+    
+    <!-- Custom CSS (Minimal) -->
+    <link href="css/styles_all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <!-- Header Component -->
+        <app-header></app-header>
+        
+        <div class="page-wrapper">
+            <!-- Онлайн -->
+            <!-- <div id="online" class="page-content">
+                <page-online-test></page-online-test>
+            </div> -->
+            
+            <!-- Счётчики 1-7 (отключены) -->
+            <!-- <div id="counter1" class="page-content"><page-counter1></page-counter1></div>
+            <div id="counter2" class="page-content"><page-counter2></page-counter2></div>
+            <div id="counter3" class="page-content"><page-counter3></page-counter3></div>
+            <div id="counter4" class="page-content"><page-counter4></page-counter4></div>
+            <div id="counter5" class="page-content"><page-counter5></page-counter5></div>
+            <div id="counter6" class="page-content"><page-counter6></page-counter6></div>
+            <div id="counter7" class="page-content"><page-counter7></page-counter7></div> -->
+            
+            <!-- Тест утилит -->
+            <div id="test-utils" class="page-content">
+                <page-test-utils></page-test-utils>
+            </div>
+            
+            <!-- Footer Component -->
+            <app-footer></app-footer>
+        </div>
+    </div>
+
+    <!-- Tabler JS (Local) -->
+    <script src="../../_tabler_engine/js/tabler.min.js"></script>
+    
+    <!-- Tabler Theme (Official) -->
+    <script src="../../_tabler_engine/js/tabler-theme.min.js"></script>
+    
+    <!-- ApexCharts JS -->
+    <script src="../../_tabler_engine/libs/apexcharts/dist/apexcharts.js"></script>
+    
+    <!-- uPlot JS -->
+    <script src="../../_tabler_engine/libs/uplot/uPlot.min.js"></script>
+    
+    <!-- Engine (Router) -->
+    <script src="engine.js"></script>
+    
+    <!-- Утилиты -->
+    <script src="js/libs/toastify.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+    <script src="js/libs/tippy.min.js"></script>
+    <script src="js/utils/notifications.js"></script>
+    <script src="js/utils/tooltips.js"></script>
+    <script src="js/utils/request-hub.js"></script>
+    
+    <!-- CPU USAGE -->  
+     
+
+    <!-- Components -->
+    <script src="js/header-component.js"></script>
+    <script src="js/footer-component.js"></script>
+    <!-- <script src="pages/online-page.js"></script> --> <!-- ОТКЛЮЧЕНО для теста -->
+    
+    <!-- Online Page - отключено (Inet_Reader модули) -->
+    <!-- <script src="pages/online-data-manager.js"></script> -->
+    <!-- <script src="pages/online-renderer.js"></script> -->
+    <!-- <script src="pages/online-updater.js"></script> -->
+    <!-- <script src="pages/online.js"></script> -->
+    
+    <!-- Counter pages - отключено -->
+    <!-- <script src="pages/counter1-page.js"></script> -->
+    <!-- <script src="pages/counter2-page.js"></script> -->
+    <!-- <script src="pages/counter3-page.js"></script> -->
+    <!-- <script src="pages/counter4-page.js"></script> -->
+    <!-- <script src="pages/counter5-page.js"></script> -->
+    <!-- <script src="pages/counter6-page.js"></script> -->
+    <!-- <script src="pages/counter7-page.js"></script> -->
+    <script src="pages/test-utils-page.js"></script>
+    
+    <!-- Инициализация навигации -->
+    <script>
+        // Загружаем последнюю страницу сразу (синхронно) 
+        (function() {
+            const lastPage = localStorage.getItem('current-page') || 'online';
+            const pageElement = document.getElementById(lastPage);
+            
+            if (pageElement) {
+                // Добавляем active к нужной странице
+                pageElement.classList.add('active');
+                console.log('✅ Загружена страница:', lastPage);
+            } else {
+                // Если страница не найдена - загружаем online
+                const defaultPage = document.getElementById('online');
+                if (defaultPage) {
+                    defaultPage.classList.add('active');
+                }
+            }
+        })();
+        
+        // Обновляем навигацию после загрузки DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            const lastPage = localStorage.getItem('current-page') || 'online';
+            const header = document.querySelector('app-header');
+            
+            if (header) {
+                // Небольшая задержка для загрузки компонента
+                setTimeout(() => {
+                    const links = header.querySelectorAll('.nav-link');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.dataset.page === lastPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html>

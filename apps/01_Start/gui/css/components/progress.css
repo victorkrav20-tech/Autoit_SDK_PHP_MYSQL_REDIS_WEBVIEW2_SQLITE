@@ -1,0 +1,74 @@
+/* ===============================================================================
+   progress.css - Стили прогресс-баров (исправлено для Win7)
+   =============================================================================== */
+
+/* === ИСПРАВЛЕНИЕ ПРОГРЕСС-БАРОВ ДЛЯ WIN7 === */
+
+/* Фон прогресс-бара - делаем видимым на Win7 */
+.progress {
+    background-color: #e9ecef !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: var(--radius-md) !important;
+    height: var(--progress-height);
+    overflow: hidden;
+}
+
+/* Маленькие прогресс-бары */
+.progress-sm {
+    height: var(--progress-height-sm);
+}
+
+/* Сам прогресс (заполненная часть) - делаем более контрастным */
+.progress-bar {
+    background-color: #206bc4 !important;
+    min-width: 2%;
+    border-radius: var(--radius-md) !important;
+}
+
+/* === ЦВЕТНЫЕ ПРОГРЕСС-БАРЫ ДЛЯ WIN7 === */
+/* Используем !important для переопределения стилей Tabler */
+
+/* Синий (primary) */
+.progress-bar.bg-primary {
+    background-color: #206bc4 !important;
+}
+
+/* Жёлтый (warning) */
+.bg-yellow .progress-bar,
+.progress-bar.bg-yellow {
+    background-color: #f59f00 !important;
+}
+
+/* Зелёный (success) */
+.bg-green .progress-bar,
+.progress-bar.bg-green {
+    background-color: #2fb344 !important;
+}
+
+/* Красный (danger) */
+.bg-red .progress-bar,
+.progress-bar.bg-red {
+    background-color: #d63939 !important;
+}
+
+/* === ДЛЯ ТЁМНОЙ ТЕМЫ - делаем ярче === */
+[data-bs-theme="dark"] .progress {
+    background-color: #2d3748 !important;
+    border: 1px solid #4a5568 !important;
+}
+
+[data-bs-theme="dark"] .progress-bar {
+    background-color: #4299e1 !important;
+}
+
+[data-bs-theme="dark"] .progress-bar.bg-yellow {
+    background-color: #fbbf24 !important;
+}
+
+[data-bs-theme="dark"] .progress-bar.bg-green {
+    background-color: #34d399 !important;
+}
+
+[data-bs-theme="dark"] .progress-bar.bg-red {
+    background-color: #f87171 !important;
+}

@@ -1,0 +1,236 @@
+/* ===============================================================================
+   analytics.css - Специфичные стили для страницы Аналитика (page2)
+   Использует переменные из core/variables.css
+   =============================================================================== */
+
+/* ========================================
+   УЛУЧШЕНИЕ ШРИФТОВ ДЛЯ БЛОКОВ ПРОИЗВОДИТЕЛЬНОСТИ
+   ======================================== */
+
+/* Текст в блоках производительности (256 MB / 512 MB, 23%, и т.д.) */
+#page2 .card-body .d-flex .ms-auto,
+#page2 .mb-3 .d-flex .ms-auto {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+}
+
+/* Все тексты внутри d-flex контейнеров */
+#page2 .d-flex > div {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   СТАТИСТИКА ЗА ПЕРИОД (stats-grid)
+   ======================================== */
+
+#page2 .stats-grid {
+    padding: var(--spacing-md) 0;
+}
+
+#page2 .stats-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    background-color: rgba(var(--tblr-primary-rgb), 0.03);
+    transition: var(--transition-colors);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 .stats-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.08);
+}
+
+#page2 .stats-label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+#page2 .stats-value {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+}
+
+#page2 .stats-value .badge {
+    padding: 0.5rem 1rem;
+    font-weight: var(--font-weight-bold);
+}
+
+/* Адаптация под тёмную тему */
+[data-bs-theme="dark"] #page2 .stats-item {
+    background-color: rgba(var(--tblr-primary-rgb), 0.08);
+}
+
+[data-bs-theme="dark"] #page2 .stats-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.15);
+}
+
+/* ========================================
+   DATAGRID (Статистика за период) - ОПТИМИЗИРОВАНО
+   ======================================== */
+
+#page2 .datagrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-sm) 0;
+}
+
+#page2 .datagrid-item {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+#page2 .datagrid-title {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    opacity: var(--opacity-70);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#page2 .datagrid-content {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--tblr-primary);
+}
+
+/* ========================================
+   КАРТОЧКА ПРОИЗВОДИТЕЛЬНОСТИ
+   ======================================== */
+
+#page2 .card-header .card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Блоки с прогресс-барами */
+#page2 .mb-3 {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+}
+
+/* Метки (Использовано памяти, CPU, Сеть) */
+#page2 .mb-3 .d-flex > div:first-child {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-base);
+}
+
+/* Значения (256 MB / 512 MB, 23%, 1.2 MB/s) */
+#page2 .mb-3 .d-flex .ms-auto {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    color: var(--tblr-primary);
+}
+
+/* ========================================
+   КАРТОЧКА АКТИВНОСТИ (список с status-dot) - ОПТИМИЗИРОВАНО
+   ======================================== */
+
+#page2 .list-group-item {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-left: none;
+    border-right: none;
+}
+
+/* Заголовки в списке активности */
+#page2 .list-group-item .text-body {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Подписи в списке активности */
+#page2 .list-group-item .text-muted {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    opacity: var(--opacity-70);
+}
+
+/* Status dot */
+#page2 .status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+#page2 .status-dot.bg-success {
+    background-color: var(--tblr-success);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-success-rgb), 0.2);
+}
+
+#page2 .status-dot.bg-warning {
+    background-color: var(--tblr-warning);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-warning-rgb), 0.2);
+}
+
+#page2 .status-dot.bg-info {
+    background-color: var(--tblr-info);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-info-rgb), 0.2);
+}
+
+/* ========================================
+   ПРОГРЕСС-БАРЫ
+   ======================================== */
+
+#page2 .progress {
+    height: var(--progress-height);
+    margin-top: var(--spacing-sm);
+    border-radius: var(--radius-md);
+}
+
+#page2 .progress-bar {
+    border-radius: var(--radius-md);
+    transition: width 0.6s ease;
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 992px) {
+    #page2 .datagrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #page2 .datagrid-content {
+        font-size: var(--font-size-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    #page2 .datagrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    #page2 .datagrid-content {
+        font-size: var(--font-size-lg);
+    }
+    
+    #page2 .list-group-item {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* ========================================
+   АНИМАЦИИ (ОПТИМИЗИРОВАННЫЕ)
+   ======================================== */
+
+/* Простая анимация для прогресс-баров при загрузке */
+#page2 .progress-bar {
+    transition: width 0.6s ease;
+}
+
+/* УБРАНА анимация pulse-dot - она жрала CPU */

@@ -1,0 +1,108 @@
+{
+	"app": {
+		"name": "Inet_Reader",
+		"version": "1.0.0",
+		"autostart": false
+	},
+	"windows": {
+		"window_1": {
+			"title": "Inet Reader",
+			"show_on_startup": true,
+			"remember_position": true,
+			"remember_size": true,
+			"minimize_to_tray": false,
+			"freeze_on_hide": false,
+			"hide_mode": "minimize",
+			"style": "default",
+			"position": {
+				"x": 245,
+				"y": 172
+			},
+			"size": {
+				"width": 1476,
+				"height": 844
+			},
+			"state": "normal"
+		},
+		"window_3": {
+			"position": {
+				"x": 352,
+				"y": 138
+			},
+			"size": {
+				"width": 786,
+				"height": 698
+			}
+		},
+		"window_2": {
+			"position": {
+				"x": 77,
+				"y": 179
+			},
+			"size": {
+				"width": 1561,
+				"height": 804
+			}
+		},
+		"window_4": {
+			"position": {
+				"x": 1137,
+				"y": 492
+			},
+			"size": {
+				"width": 671,
+				"height": 319
+			}
+		},
+		"window_5": {
+			"position": {
+				"x": 1621,
+				"y": 291
+			},
+			"size": {
+				"width": 302,
+				"height": 66
+			}
+		},
+		"window_8": {
+			"position": {
+				"x": 926,
+				"y": 343
+			},
+			"size": {
+				"width": 901,
+				"height": 656
+			}
+		},
+		"window_6": {
+			"position": {
+				"x": 310,
+				"y": 315
+			},
+			"size": {
+				"width": 1411,
+				"height": 716
+			}
+		},
+		"window_7": {
+			"position": {
+				"x": 914,
+				"y": 266
+			},
+			"size": {
+				"width": 849,
+				"height": 681
+			}
+		}
+	},
+	"hotkeys": {
+		"toggle_window": "F2",
+		"exit_app": "Ctrl+Alt+Q"
+	},
+	"tray": {
+		"enabled": true,
+		"mode": "hide",
+		"tooltip": "Inet Reader",
+		"show_notifications": true
+	}
+}

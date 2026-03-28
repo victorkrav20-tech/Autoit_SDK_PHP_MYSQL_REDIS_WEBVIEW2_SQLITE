@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Online Page</title>
+</head>
+<body>
+    <h1>Test RequestHub</h1>
+    
+    <button id="test-get-counters">Get Counters Status</button>
+    <button id="test-toggle-parsing">Toggle Parsing Counter 1</button>
+    <button id="test-toggle-window">Toggle Window Counter 1</button>
+    
+    <pre id="result"></pre>
+    
+    <script src="engine.js"></script>
+    <script src="js/utils/request-hub.js"></script>
+    <script>
+        const resultEl = document.getElementById('result');
+        
+        // Тест 1: Получить статус счётчиков
+        document.getElementById('test-get-counters').addEventListener('click', async () => {
+            resultEl.textContent = 'Отправка запроса...';
+            try {
+                const response = await RequestHub.sendReliable('get_counters_status');
+                resultEl.textContent = JSON.stringify(response, null, 2);
+                console.log('✅ Ответ:', response);
+            } catch (error) {
+                resultEl.textContent = 'Ошибка: ' + error.message;
+                console.error('❌ Ошибка:', error);
+            }
+        });
+        
+        // Тест 2: Переключить парсинг
+        document.getElementById('test-toggle-parsing').addEventListener('click', async () => {
+            resultEl.textContent = 'Отправка запроса...';
+            try {
+                const response = await RequestHub.sendReliable('toggle_counter_parsing', { counterId: 1 });
+                resultEl.textContent = JSON.stringify(response, null, 2);
+                console.log('✅ Ответ:', response);
+            } catch (error) {
+                resultEl.textContent = 'Ошибка: ' + error.message;
+                console.error('❌ Ошибка:', error);
+            }
+        });
+        
+        // Тест 3: Переключить окно
+        document.getElementById('test-toggle-window').addEventListener('click', async () => {
+            resultEl.textContent = 'Отправка запроса...';
+            try {
+                const response = await RequestHub.sendReliable('toggle_counter_window', { counterId: 1 });
+                resultEl.textContent = JSON.stringify(response, null, 2);
+                console.log('✅ Ответ:', response);
+            } catch (error) {
+                resultEl.textContent = 'Ошибка: ' + error.message;
+                console.error('❌ Ошибка:', error);
+            }
+        });
+        
+        console.log('✅ Тестовая страница загружена');
+        console.log('WebView2Engine ready:', WebView2Engine.isReady);
+        console.log('RequestHub:', RequestHub);
+    </script>
+</body>
+</html>

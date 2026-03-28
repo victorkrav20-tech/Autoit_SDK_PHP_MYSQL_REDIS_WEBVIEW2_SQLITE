@@ -1,0 +1,204 @@
+/* ===============================================================================
+   footer.css - Стили для footer-component
+   Использует переменные из core/variables.css
+   =============================================================================== */
+
+/* ========================================
+   БАЗОВЫЕ СТИЛИ FOOTER
+   ======================================== */
+
+.footer {
+    padding: var(--spacing-xl) 0;
+    border-top: var(--border-width-1) solid var(--border-color);
+    margin-top: var(--spacing-2xl);
+}
+
+.footer-transparent {
+    background-color: transparent;
+}
+
+/* ========================================
+   ССЫЛКИ В FOOTER
+   ======================================== */
+
+.footer .link-secondary {
+    color: var(--color-gray-600);
+    text-decoration: none;
+    transition: var(--transition-colors);
+    font-weight: var(--font-weight-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.footer .link-secondary:hover {
+    color: var(--tblr-primary);
+}
+
+.footer .link-secondary .icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========================================
+   СПИСКИ В FOOTER
+   ======================================== */
+
+.footer .list-inline {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.footer .list-inline-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer .list-inline-dots .list-inline-item:not(:last-child)::after {
+    content: '•';
+    margin-left: var(--spacing-sm);
+    color: var(--color-gray-400);
+}
+
+/* ========================================
+   БЕЙДЖ "ЭТАЛОННОЕ ПРИЛОЖЕНИЕ"
+   ======================================== */
+
+.footer .badge {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.footer .badge.bg-blue-lt {
+    background-color: rgba(var(--tblr-primary-rgb), 0.1);
+    color: var(--tblr-primary);
+}
+
+.footer .badge .icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* ========================================
+   ИКОНКА СЕРДЦА
+   ======================================== */
+
+.footer .icon-filled {
+    fill: currentColor;
+}
+
+.footer .icon-inline {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+}
+
+.footer .text-pink {
+    color: #d63384;
+}
+
+/* ========================================
+   ALERT В FOOTER (информационный блок)
+   ======================================== */
+
+.footer .alert {
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.footer .alert-info {
+    background-color: rgba(var(--tblr-info-rgb), 0.1);
+    border: var(--border-width-1) solid rgba(var(--tblr-info-rgb), 0.2);
+    color: inherit;
+}
+
+.footer .alert-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: var(--spacing-md);
+}
+
+/* Логотип в alert (как в header) */
+.footer .alert-logo-icon {
+    width: 48px !important;
+    height: 48px !important;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(80%) saturate(2000%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+[data-bs-theme="dark"] .footer .alert-logo-icon {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(80%) saturate(1800%) hue-rotate(200deg) brightness(105%) contrast(95%);
+}
+
+.footer .alert-title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer .alert code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    font-family: var(--tblr-font-monospace);
+    font-size: var(--font-size-sm);
+}
+
+[data-bs-theme="dark"] .footer .alert code {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--spacing-lg) 0;
+        text-align: center;
+    }
+    
+    .footer .list-inline {
+        justify-content: center;
+    }
+    
+    .footer .row {
+        flex-direction: column-reverse;
+    }
+    
+    .footer .col-lg-auto {
+        margin-top: var(--spacing-md);
+    }
+}
+
+/* ========================================
+   ТЁМНАЯ ТЕМА
+   ======================================== */
+
+[data-bs-theme="dark"] .footer {
+    border-top-color: var(--color-gray-800);
+}
+
+[data-bs-theme="dark"] .footer .link-secondary {
+    color: var(--color-gray-400);
+}
+
+[data-bs-theme="dark"] .footer .link-secondary:hover {
+    color: var(--tblr-primary);
+}
+
+[data-bs-theme="dark"] .footer .list-inline-dots .list-inline-item:not(:last-child)::after {
+    color: var(--color-gray-600);
+}

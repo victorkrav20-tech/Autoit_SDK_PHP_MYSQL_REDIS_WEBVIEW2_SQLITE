@@ -1,0 +1,289 @@
+/* ===============================================================================
+   cards.css - Стили для карточек
+   Использует переменные из core/variables.css
+   =============================================================================== */
+
+/* ========================================
+   БАЗОВЫЕ СТИЛИ КАРТОЧЕК (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+.card {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: var(--border-width-1) solid var(--border-color);
+}
+
+/* ========================================
+   КАРТОЧКИ СТАТИСТИКИ (page1 - 4 карточки вверху)
+   ======================================== */
+
+/* Большое значение (h1) в карточке */
+.card .h1 {
+    font-weight: var(--font-weight-bold);
+    color: var(--tblr-primary);
+    line-height: var(--line-height-tight);
+}
+
+/* Подзаголовок в карточке */
+.card .subheader {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: var(--opacity-70);
+}
+
+/* ========================================
+   КАРТОЧКИ С ТАБЛИЦАМИ (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+.card .table-responsive {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.card-table {
+    margin-bottom: 0;
+}
+
+.card-table thead th {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: var(--opacity-70);
+    border-bottom: var(--border-width-2) solid var(--border-color);
+}
+
+.card-table tbody tr:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.05);
+}
+
+/* ========================================
+   DATAGRID (блоки статистики на page2)
+   ======================================== */
+
+.datagrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.datagrid-item {
+    padding: var(--spacing-sm) 0;
+    border-bottom: var(--border-width-1) solid var(--border-color);
+}
+
+.datagrid-item:last-child {
+    border-bottom: none;
+}
+
+.datagrid-title {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    opacity: var(--opacity-70);
+    margin-bottom: var(--spacing-xs);
+}
+
+.datagrid-content {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+}
+
+/* ========================================
+   КАРТОЧКИ С HEADER (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+.card-header {
+    border-bottom: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: transparent;
+}
+
+.card-header h3,
+.card-header .card-title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    margin: 0;
+}
+
+/* ========================================
+   КАРТОЧКИ С FOOTER
+   ======================================== */
+
+.card-footer {
+    border-top: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: transparent;
+}
+
+.card-footer .btn-list {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   КАРТОЧКИ BODY
+   ======================================== */
+
+.card-body {
+    padding: var(--spacing-lg);
+}
+
+/* Карточка с минимальным padding */
+.card-body-sm {
+    padding: var(--spacing-md);
+}
+
+/* Карточка с большим padding */
+.card-body-lg {
+    padding: var(--spacing-xl);
+}
+
+/* ========================================
+   СПИСКИ ВНУТРИ КАРТОЧЕК (page2 - Активность) - ОПТИМИЗИРОВАНО
+   ======================================== */
+
+.list-group-flush {
+    border-radius: 0;
+}
+
+.list-group-flush .list-group-item {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.list-group-flush .list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-flush .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-flush .list-group-item:hover {
+    background-color: rgba(var(--tblr-primary-rgb), 0.05);
+}
+
+/* Status dot в списках */
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+}
+
+.status-dot.bg-success {
+    background-color: var(--tblr-success) !important;
+}
+
+.status-dot.bg-warning {
+    background-color: var(--tblr-warning) !important;
+}
+
+.status-dot.bg-danger {
+    background-color: var(--tblr-danger) !important;
+}
+
+.status-dot.bg-info {
+    background-color: var(--tblr-info) !important;
+}
+
+/* ========================================
+   КАРТОЧКИ С ФОРМАМИ (page3 - Настройки) - ОПТИМИЗИРОВАНО
+   ======================================== */
+
+.card .form-label {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.card .form-control,
+.card .form-select {
+    border-radius: var(--radius-md);
+    border: var(--border-width-1) solid var(--border-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+}
+
+.card .form-control:focus,
+.card .form-select:focus {
+    border-color: var(--tblr-primary);
+    box-shadow: 0 0 0 3px rgba(var(--tblr-primary-rgb), 0.1);
+}
+
+.card .form-check-label {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: var(--spacing-md);
+    }
+    
+    .card-header,
+    .card-footer {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .datagrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   СПЕЦИАЛЬНЫЕ КАРТОЧКИ ДЛЯ SCADA
+   ======================================== */
+
+/* Карточка с акцентом (для важных данных) */
+.card-accent {
+    border-left: 4px solid var(--tblr-primary);
+}
+
+.card-accent.card-success {
+    border-left-color: var(--tblr-success);
+}
+
+.card-accent.card-warning {
+    border-left-color: var(--tblr-warning);
+}
+
+.card-accent.card-danger {
+    border-left-color: var(--tblr-danger);
+}
+
+/* Карточка с иконкой статуса */
+.card-status {
+    position: relative;
+}
+
+.card-status::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--tblr-primary);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.card-status.status-success::before {
+    background-color: var(--tblr-success);
+}
+
+.card-status.status-warning::before {
+    background-color: var(--tblr-warning);
+}
+
+.card-status.status-danger::before {
+    background-color: var(--tblr-danger);
+}

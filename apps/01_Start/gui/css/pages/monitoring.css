@@ -1,0 +1,150 @@
+/* ===============================================================================
+   monitoring.css - Специфичные стили для страницы Мониторинг (page1)
+   Использует переменные из core/variables.css
+   =============================================================================== */
+
+/* ========================================
+   КАРТОЧКИ ДАТЧИКОВ (4 карточки вверху)
+   ======================================== */
+
+/* Контейнер карточек датчиков */
+.row-deck .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-deck .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Большое значение датчика */
+#page1 .h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height-tight);
+}
+
+/* Подзаголовок датчика */
+#page1 .subheader {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: var(--font-weight-semibold);
+    opacity: var(--opacity-60);
+}
+
+/* Dropdown в карточке датчика */
+#page1 .dropdown-toggle {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs);
+    text-decoration: none;
+    transition: var(--transition-colors);
+}
+
+#page1 .dropdown-toggle:hover {
+    color: var(--tblr-primary) !important;
+}
+
+/* ========================================
+   СТАТУСЫ И ИНДИКАТОРЫ
+   ======================================== */
+
+/* Текст со статусом (Активных, Средняя, и т.д.) */
+#page1 .text-green {
+    color: var(--tblr-success) !important;
+    font-weight: var(--font-weight-semibold);
+}
+
+#page1 .text-yellow {
+    color: var(--tblr-warning) !important;
+    font-weight: var(--font-weight-semibold);
+}
+
+#page1 .text-red {
+    color: var(--tblr-danger) !important;
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Иконки в статусах */
+#page1 .icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========================================
+   ТАБЛИЦА ДАТЧИКОВ (ОПТИМИЗИРОВАНО)
+   ======================================== */
+
+/* Заголовок таблицы */
+#page1 .card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Ячейки таблицы */
+#page1 .table td {
+    font-weight: var(--font-weight-normal);
+    padding: var(--spacing-md);
+    vertical-align: middle;
+}
+
+#page1 .table th {
+    font-weight: var(--font-weight-semibold);
+    padding: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+/* Бейджи в таблице */
+#page1 .table .badge {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* ========================================
+   ПРОГРЕСС-БАРЫ В КАРТОЧКАХ
+   ======================================== */
+
+#page1 .progress {
+    height: var(--progress-height);
+    margin-top: var(--spacing-xs);
+}
+
+#page1 .progress-sm {
+    height: var(--progress-height-sm);
+}
+
+/* ========================================
+   АДАПТИВНОСТЬ
+   ======================================== */
+
+@media (max-width: 992px) {
+    #page1 .h1 {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+@media (max-width: 768px) {
+    #page1 .h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    #page1 .table {
+        font-size: var(--font-size-sm);
+    }
+    
+    #page1 .table td,
+    #page1 .table th {
+        padding: var(--spacing-sm);
+    }
+}
+
+/* ========================================
+   АНИМАЦИИ (ОПТИМИЗИРОВАННЫЕ - БЕЗ INFINITE)
+   ======================================== */
+
+/* УБРАНЫ все infinite анимации - они жрали CPU */
