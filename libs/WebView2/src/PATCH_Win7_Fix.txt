@@ -1,0 +1,85 @@
+=== PATCH FOR WIN7 VIRTUALBOX COMPATIBILITY ===
+
+Файл: WebViewManager.cs
+Строки: 456-464
+
+ЗАМЕНИТЬ:
+                // UI Setup on the main UI thread
+                InvokeOnUiThread(() => {
+                    _webView.Location = new Point(x, y);
+                    _webView.Size = new Size(width, height);
+                    // Attach the WebView to the AutoIt window/container
+                    SetParent(_webView.Handle, _parentHandle);
+                    _webView.Visible = false;
+                });
+
+НА:
+                // UI Setup on the main UI thread
+                InvokeOnUiThread(() => {
+                    _webView.Location = new Point(x, y);
+                    _webView.Size = new Size(width, height);
+                    _webView.Visible = false;
+                    
+                    // Try to attach to parent window (may fail on Win7/VirtualBox)
+                    try
+                    {
+                        SetParent(_webView.Handle, _parentHandle);
+                        OnMessageReceived?.Invoke("DEBUG|SetParent succeeded");
+                    }
+                    catch (Exception ex)
+                    {
+                        // If SetParent fails, try alternative approach
+                        OnMessageReceived?.Invoke("WARNING|SetParent failed: " + ex.Message + " - trying alternative");
+                        
+                        // Alternative: Create as child window directly
+                        try
+                        {
+                            // Use WinAPI directly with extended error handling
+                            const int GWL_STYLE = -16;
+                            const int WS_CHILD = 0x40000000;
+                            const int WS_VISIBLE = 0x10000000;
+                            
+                            IntPtr style = GetWindowLong(_webView.Handle, GWL_STYLE);
+                            style = new IntPtr(style.ToInt64() | WS_CHILD);
+                            SetWindowLong(_webView.Handle, GWL_STYLE, style);
+                            
+                            SetParent(_webView.Handle, _parentHandle);
+                            OnMessageReceived?.Invoke("DEBUG|Alternative SetParent succeeded");
+                        }
+                        catch (Exception ex2)
+                        {
+                            OnMessageReceived?.Invoke("ERROR|Both SetParent methods failed: " + ex2.Message);
+                            throw; // Re-throw to trigger main catch block
+                        }
+                    }
+                });
+
+ТАКЖЕ ДОБАВИТЬ в начало класса (после using statements):
+
+        // Win32 API imports for alternative window attachment
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
+        
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern IntPtr GetWindowLong(IntPtr hWnd, int nIndex);
+        
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern IntPtr SetWindowLong(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
+
+=== ИНСТРУКЦИЯ ПО ПРИМЕНЕНИЮ ===
+
+1. Открыть libs\WebView2\src\NetWebView2Lib.sln в Visual Studio 2019+
+2. Применить изменения в WebViewManager.cs
+3. Build → Rebuild Solution (Release, x64)
+4. Скопировать новую DLL из bin\Release в libs\WebView2\bin\
+5. Перерегистрировать: Register_web2.au3
+6. Протестировать на Win7 VM
+
+=== АЛЬТЕРНАТИВА БЕЗ ПЕРЕСБОРКИ ===
+
+Если нет Visual Studio, попробуй:
+
+1. Отключить 3D ускорение в VirtualBox (КРИТИЧНО!)
+2. Установить Visual C++ Redistributable 2015-2022 x64
+3. Попробовать на реальном железе Win7 (не VM)
+4. Использовать более новую версию WebView2 Runtime (если есть для Win7)
