@@ -1,0 +1,18 @@
+[FATAL] 2026-01-14 16:02:09 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [*] 0041 | 2026-01-14 16:02:09 | КОНСОЛЬ      | STRIPPED        | ✅ Найден test_stripped.au3 в папке Watchdog
+====================
+[FATAL] 2026-01-14 16:02:10 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [!] 0042 | 2026-01-14 16:02:09 | ОШИБКА       | AUTOIT          | test.exe >> Строка 7174 >> Func ControlsssssS >> ConsoleWrite("Попытка доступа к элементу " & $i & ": " & $aTestArray[$i] & @CRLF) >> Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+====================
+[FATAL] 2026-01-14 16:02:24 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [*] 0043 | 2026-01-14 16:02:24 | КОНСОЛЬ      | STRIPPED        | ✅ Найден test_stripped.au3 в папке Watchdog
+====================
+[FATAL] 2026-01-14 16:02:24 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [!] 0044 | 2026-01-14 16:02:24 | ОШИБКА       | AUTOIT          | test.exe >> Строка 7174 >> Func ControlsssssS >> ConsoleWrite("Попытка доступа к элементу " & $i & ": " & $aTestArray[$i] & @CRLF) >> Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+====================
+[FATAL] 2026-01-14 16:02:38 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [*] 0045 | 2026-01-14 16:02:38 | КОНСОЛЬ      | STRIPPED        | ✅ Найден test_stripped.au3 в папке Watchdog
+====================
+[FATAL] 2026-01-14 16:02:38 | ПРИЧИНА: Не удалось записать в основной лог после 5 попыток
+ПОТЕРЯННАЯ ЗАПИСЬ: [!] 0046 | 2026-01-14 16:02:38 | ОШИБКА       | AUTOIT          | test.exe >> Строка 7174 >> Func ControlsssssS >> ConsoleWrite("Попытка доступа к элементу " & $i & ": " & $aTestArray[$i] & @CRLF) >> Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+====================

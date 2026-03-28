@@ -1,0 +1,1518 @@
+--- CRASH REPORT ---
+Time: 2026/01/13 19:34:58
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:34:59
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:01
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:02
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:03
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:04
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:06
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:07
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:08
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:09
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:11
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:12
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:13
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:14
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:15
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:17
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:18
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:19
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:20
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:22
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:23
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:24
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:25
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:26
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:28
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:29
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:30
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:31
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:33
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:34
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:35
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:36
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:38
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:39
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:40
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:41
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:42
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:44
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:45
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:46
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:47
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:49
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:50
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:51
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:52
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:54
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:55
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:56
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:57
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:35:58
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:00
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:01
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:02
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:03
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:05
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:06
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:31
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:33
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:34
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:35
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:36
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:37
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:39
+Process: 
+Line in EXE: Unknown
+Variable: None
+Description: Unknown Error
+Full Raw: 
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:39
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:40
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:42
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:43
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:44
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:45
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:46
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:48
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:49
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:50
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:51
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test3.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:53
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:36:57
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test1.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:38:16
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:07
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:11
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:17
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:21
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:26
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:30
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:35
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:39
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:43
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:47
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:52
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:49:56
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:01
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:05
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:10
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:14
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:19
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:23
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:27
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:32
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:37
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:41
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:46
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:50:53
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:51:43
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:52:41
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test4.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:52:48
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:52:51
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:52:55
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:52:59
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:53:02
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:53:06
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 19:53:10
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test5.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 20:17:05
+Process: AutoIt Error
+Line in EXE: 7173
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7173  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test2.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:38:16
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:39:05
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:39:19
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:41:17
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:41:56
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:42:52
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:43:11
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:43:26
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:44:18
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:44:55
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:46:39
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:46:52
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:47:05
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/13 21:47:18
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:00:01
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:00:15
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:00:29
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:00:43
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:00:57
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:01:12
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:01:26
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:01:41
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:01:55
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:02:09
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:02:24
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 16:02:38
+Process: AutoIt Error
+Line in EXE: 7174
+Variable: None
+Description: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+Full Raw: Line 7174  (File "C:\Users\Administrator\Desktop\Запускатр_лог\test.exe"):
+
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
+-----------------------
+--- CRASH REPORT ---
+Time: 2026/01/14 19:30:21
+Process: AutoIt Error
+Line in EXE: 1
+Variable: $i
+Description: String missing closing quote.
+Full Raw: Line 1:
+
+Execute('For $i = 1 To 10
+  MsgBox(64, Поток, Шаг
+Execute(^ ERROR
+
+Error: String missing closing quote.
+-----------------------
