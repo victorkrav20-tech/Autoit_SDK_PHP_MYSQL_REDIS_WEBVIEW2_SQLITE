@@ -1,0 +1,37 @@
+{
+	"app": {
+		"name": "Rs485_Example",
+		"version": "1.0.0",
+		"autostart": false
+	},
+	"windows": {
+		"window_1": {
+			"title": "Main Window",
+			"show_on_startup": true,
+			"remember_position": true,
+			"remember_size": true,
+			"minimize_to_tray": false,
+			"freeze_on_hide": false,
+			"hide_mode": "minimize",
+			"style": "default",
+			"position": {
+				"x": 100,
+				"y": 100
+			},
+			"size": {
+				"width": 1200,
+				"height": 800
+			},
+			"state": "normal"
+		}
+	},
+	"hotkeys": {
+		"toggle_window": "F2",
+		"exit_app": "Ctrl+Alt+Q"
+	},
+	"tray": {
+		"enabled": false,
+		"tooltip": "Rs485_Example",
+		"show_notifications": true
+	}
+}

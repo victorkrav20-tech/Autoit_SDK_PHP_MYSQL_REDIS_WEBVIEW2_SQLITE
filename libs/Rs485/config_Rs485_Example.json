@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "Rs485_Example",
+    "debug": true,
+    "log_filter": 1,
+    "log_target": 3,
+    "comm_port": 7,
+    "baud_rate": 19200,
+    "comm_mode": 64,
+    "slave_id": 1,
+    "timeout_ms": 300
+  },
+  "redis": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 6379,
+    "hash_name": "auto_zames_online",
+    "device_name": "Rs485_Port1",
+    "reconnect_interval_ms": 5000
+  },
+  "requests": [
+    {
+      "id": "read_all",
+      "label": "Чтение всех регистров",
+      "enabled": true,
+      "func_code": 3,
+      "reg_start": 0,
+      "reg_count": 10,
+      "interval_ms": 1000,
+      "var_map": [
+        { "key": "temp_int16",  "byte_offset": 0,  "type": "INT16",   "byte_order": "ABCD", "scale": 0.1,  "unit": "C"   },
+        { "key": "status",      "byte_offset": 2,  "type": "UINT16",  "byte_order": "ABCD", "scale": 1.0,  "unit": ""    },
+        { "key": "counter",     "byte_offset": 4,  "type": "UINT16",  "byte_order": "ABCD", "scale": 1.0,  "unit": ""    },
+        { "key": "pressure",    "byte_offset": 6,  "type": "FLOAT32", "byte_order": "ABCD", "scale": 1.0,  "unit": "bar" },
+        { "key": "weight",      "byte_offset": 10, "type": "FLOAT32", "byte_order": "CDAB", "scale": 1.0,  "unit": "kg"  },
+        { "key": "long_val",    "byte_offset": 14, "type": "INT32",   "byte_order": "ABCD", "scale": 1.0,  "unit": ""    },
+        { "key": "uint32_val",  "byte_offset": 18, "type": "UINT32",  "byte_order": "ABCD", "scale": 1.0,  "unit": ""    }
+      ]
+    }
+  ]
+}
