@@ -1,0 +1,23 @@
+; === РЕЖИМ OCR ===
+; True = читать город+координаты вместе (быстрее, один OCR)
+; False = читать раздельно (точнее, два OCR)
+Global $g_bUseFullOCR = False
+
+; === ВАРИАНТ 1: Полный OCR (Город + Координаты вместе) ===
+Global $g_iCityFull_X = 80
+Global $g_iCityFull_Y = 33
+Global $g_iCityFull_Width = 127
+Global $g_iCityFull_Height = 24
+
+; === ВАРИАНТ 2: Раздельный OCR ===
+; Часть 1: Только город (Atlans)
+Global $g_iCityOnly_X = 80
+Global $g_iCityOnly_Y = 33
+Global $g_iCityOnly_Width = 80
+Global $g_iCityOnly_Height = 24
+
+; Часть 2: Только координаты (198,66)
+Global $g_iCoordsOnly_X = 160
+Global $g_iCoordsOnly_Y = 33
+Global $g_iCoordsOnly_Width = 47
+Global $g_iCoordsOnly_Height = 24

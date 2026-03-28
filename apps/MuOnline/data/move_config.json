@@ -1,0 +1,39 @@
+{
+  "center": {
+    "x": 810,
+    "y": 440,
+    "description": "Центр персонажа на экране"
+  },
+  "directions": {
+    "x_plus": {
+      "x": 960,
+      "y": 580,
+      "offset_x": 150,
+      "offset_y": 140,
+      "description": "Движение вправо-вниз (X+)"
+    },
+    "x_minus": {
+      "x": 660,
+      "y": 300,
+      "offset_x": -150,
+      "offset_y": -140,
+      "description": "Движение влево-вверх (X-)"
+    },
+    "y_plus": {
+      "x": 1000,
+      "y": 320,
+      "offset_x": 190,
+      "offset_y": -120,
+      "description": "Движение вправо-вверх (Y+)"
+    },
+    "y_minus": {
+      "x": 620,
+      "y": 560,
+      "offset_x": -190,
+      "offset_y": 120,
+      "description": "Движение влево-вниз (Y-)"
+    }
+  },
+  "version": "1.0",
+  "created": "2026-03-12"
+}

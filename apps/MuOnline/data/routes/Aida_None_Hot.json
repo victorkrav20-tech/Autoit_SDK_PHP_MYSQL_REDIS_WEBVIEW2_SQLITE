@@ -1,0 +1,38 @@
+{
+  "name": "Aida_None_Hot",
+  "city_name": "None",
+  "city_y": 599,
+  "created": "2026-03-16 04:37:39",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "186,175",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "171,169",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "164,158",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "178,150",
+      "description": "Точка #3"
+    },
+    {
+      "index": 4,
+      "coords": "188,150",
+      "description": "Точка #4"
+    },
+    {
+      "index": 5,
+      "coords": "196,149",
+      "description": "Точка #5"
+    }
+  ]
+}

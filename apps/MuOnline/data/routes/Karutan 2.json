@@ -1,0 +1,18 @@
+{
+  "name": "Karutan 2",
+  "city_name": "None",
+  "city_y": 569,
+  "created": "2026-03-13 04:56:50",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "124,118",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "124,118",
+      "description": "Точка #1"
+    }
+  ]
+}

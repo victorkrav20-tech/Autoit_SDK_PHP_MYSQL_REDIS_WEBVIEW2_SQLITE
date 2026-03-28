@@ -1,0 +1,25 @@
+{
+  "markers": [
+    {
+      "name": "helper_active",
+      "x": 565,
+      "y": 840,
+      "color": "0x210C00",
+      "description": "Жёлтый текст Helper Bot (активен) 0x974A15 = выключен, 0x210C00 = Включен "
+    },
+     {
+      "name": "helper_ok",
+      "x": 812,
+      "y": 535,
+      "color": "0x3A3F20",
+      "description": "knopka Helper Bot ok"
+    },
+    {
+      "name": "map_opened",
+      "x": 349,
+      "y": 199,
+      "color": "0xD44400",
+      "description": "Чёрный фон открытой карты 0xD44400 = карта открыта"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Atlans_3_1",
+  "city_name": "Atlans 3",
+  "city_y": 551,
+  "created": "2026-03-12 15:49:44",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "65,163",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "69,167",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "71,172",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "71,178",
+      "description": "Точка #3"
+    },
+    {
+      "index": 4,
+      "coords": "73,180",
+      "description": "Точка #4"
+    }
+  ]
+}

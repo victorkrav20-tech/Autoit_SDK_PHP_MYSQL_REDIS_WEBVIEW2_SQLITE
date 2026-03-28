@@ -1,0 +1,28 @@
+{
+  "name": "Arena01_topmu",
+  "city_name": "Atlans 3",
+  "city_y": 551,
+  "created": "2026-03-13 01:59:55",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "65,41",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "65,36",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "64,30",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "64,29",
+      "description": "Точка #3"
+    }
+  ]
+}

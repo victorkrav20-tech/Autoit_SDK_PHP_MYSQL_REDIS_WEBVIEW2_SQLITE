@@ -1,0 +1,38 @@
+{
+  "name": "Tarkan2_None",
+  "city_name": "None",
+  "city_y": 569,
+  "created": "2026-03-15 08:59:16",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "98,145",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "85,145",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "69,144",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "49,141",
+      "description": "Точка #3"
+    },
+    {
+      "index": 4,
+      "coords": "36,134",
+      "description": "Точка #4"
+    },
+    {
+      "index": 5,
+      "coords": "25,131",
+      "description": "Точка #5"
+    }
+  ]
+}

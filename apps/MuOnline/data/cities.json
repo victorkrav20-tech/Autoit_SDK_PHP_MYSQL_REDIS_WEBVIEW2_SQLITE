@@ -1,0 +1,21 @@
+{
+  "cities": [
+    {
+      "name": "Karutan 2",
+      "y": 563,
+      "description": "Devias - город для телепортации"
+    },
+    {
+      "name": "Atlans 3",
+      "y": 581,
+      "description": "Lorencia - стартовый город"
+    },
+    {
+      "name": "None",
+      "y": 599,
+      "description": "Noria - город торговцев"
+    }
+  ],
+  "version": "1.0",
+  "created": "2026-03-12"
+}

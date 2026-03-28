@@ -1,0 +1,73 @@
+{
+  "name": "LT7",
+  "city_name": "None",
+  "city_y": 569,
+  "created": "2026-03-13 01:03:32",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "8,86",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "16,86",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "24,86",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "29,85",
+      "description": "Точка #3"
+    },
+    {
+      "index": 4,
+      "coords": "41 ,86",
+      "description": "Точка #4"
+    },
+    {
+      "index": 5,
+      "coords": "49,87",
+      "description": "Точка #5"
+    },
+    {
+      "index": 6,
+      "coords": "54,91",
+      "description": "Точка #6"
+    },
+    {
+      "index": 7,
+      "coords": "49,96",
+      "description": "Точка #7"
+    },
+    {
+      "index": 8,
+      "coords": "40,97",
+      "description": "Точка #8"
+    },
+    {
+      "index": 9,
+      "coords": "33,100",
+      "description": "Точка #9"
+    },
+    {
+      "index": 10,
+      "coords": "23,102",
+      "description": "Точка #10"
+    },
+    {
+      "index": 11,
+      "coords": "17,102",
+      "description": "Точка #11"
+    },
+    {
+      "index": 12,
+      "coords": "13,102",
+      "description": "Точка #12"
+    }
+  ]
+}

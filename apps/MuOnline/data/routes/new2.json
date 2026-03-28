@@ -1,0 +1,73 @@
+{
+  "name": "new2",
+  "city_name": "Devias",
+  "city_y": 533,
+  "created": "2026-03-12 09:34:06",
+  "waypoints": [
+    {
+      "index": 0,
+      "coords": "162,16",
+      "description": "Стартовая позиция"
+    },
+    {
+      "index": 1,
+      "coords": "162,23",
+      "description": "Точка #1"
+    },
+    {
+      "index": 2,
+      "coords": "163,29",
+      "description": "Точка #2"
+    },
+    {
+      "index": 3,
+      "coords": "158,37",
+      "description": "Точка #3"
+    },
+    {
+      "index": 4,
+      "coords": "155,44",
+      "description": "Точка #4"
+    },
+    {
+      "index": 5,
+      "coords": "150,50",
+      "description": "Точка #5"
+    },
+    {
+      "index": 6,
+      "coords": "146,56",
+      "description": "Точка #6"
+    },
+    {
+      "index": 7,
+      "coords": "139,57",
+      "description": "Точка #7"
+    },
+    {
+      "index": 8,
+      "coords": "131,51",
+      "description": "Точка #8"
+    },
+    {
+      "index": 9,
+      "coords": "124,48",
+      "description": "Точка #9"
+    },
+    {
+      "index": 10,
+      "coords": "118,49",
+      "description": "Точка #10"
+    },
+    {
+      "index": 11,
+      "coords": "112,48",
+      "description": "Точка #11"
+    },
+    {
+      "index": 12,
+      "coords": "109,47",
+      "description": "Точка #12"
+    }
+  ]
+}
